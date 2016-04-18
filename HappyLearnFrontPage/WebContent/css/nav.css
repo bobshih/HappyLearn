@@ -46,6 +46,11 @@ body {
   -webkit-box-shadow: 0 12px #e3dede, 0 24px #e3dede;
   -moz-box-shadow: 0 12px #e3dede, 0 24px #e3dede; }
 
+.icon {
+  display: inline;
+  font-family: Pacifico, sans-serif;
+  font-size: 35px; }
+
 .hlIcon {
   widows: 40px;
   height: 40px; }
