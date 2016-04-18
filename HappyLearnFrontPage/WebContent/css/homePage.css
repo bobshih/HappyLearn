@@ -99,6 +99,203 @@ body {
 
   .hideLG {
     display: none; } }
+/* Grid */
+.col {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+@media screen and (min-width: 480px) {
+  .col-xs-11 {
+    width: 91.662%; }
+
+  .col-xs-10 {
+    width: 83.332%; }
+
+  .col-xs-9 {
+    width: 75%; }
+
+  .col-xs-8 {
+    width: 66.662%; }
+
+  .col-xs-7 {
+    width: 58.331%; }
+
+  .col-xs-6 {
+    width: 50%; }
+
+  .col-xs-5 {
+    width: 41.662%; }
+
+  .col-xs-4 {
+    width: 33.332%; }
+
+  .col-xs-3 {
+    width: 25%; }
+
+  .col-xs-2 {
+    width: 16.662%; }
+
+  .col-xs-1 {
+    width: 8.332%; } }
+@media screen and (min-width: 768px) {
+  .col-sm-11 {
+    width: 91.662%; }
+
+  .col-sm-10 {
+    width: 83.332%; }
+
+  .col-sm-9 {
+    width: 75%; }
+
+  .col-sm-8 {
+    width: 66.662%; }
+
+  .col-sm-7 {
+    width: 58.331%; }
+
+  .col-sm-6 {
+    width: 50%; }
+
+  .col-sm-5 {
+    width: 41.662%; }
+
+  .col-sm-4 {
+    width: 33.332%; }
+
+  .col-sm-3 {
+    width: 25%; }
+
+  .col-sm-2 {
+    width: 16.662%; }
+
+  .col-sm-1 {
+    width: 8.332%; } }
+@media screen and (min-width: 1024px) {
+  .col-md-11 {
+    width: 91.662%; }
+
+  .col-md-10 {
+    width: 83.332%; }
+
+  .col-md-9 {
+    width: 75%; }
+
+  .col-md-8 {
+    width: 66.662%; }
+
+  .col-md-7 {
+    width: 58.331%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-md-5 {
+    width: 41.662%; }
+
+  .col-md-4 {
+    width: 33.332%; }
+
+  .col-md-3 {
+    width: 25%; }
+
+  .col-md-2 {
+    width: 16.662%; }
+
+  .col-md-1 {
+    width: 8.332%; } }
+@media screen and (min-width: 1280px) {
+  .col-lg-11 {
+    width: 91.662%; }
+
+  .col-lg-10 {
+    width: 83.332%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-8 {
+    width: 66.662%; }
+
+  .col-lg-7 {
+    width: 58.331%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-5 {
+    width: 41.662%; }
+
+  .col-lg-4 {
+    width: 33.332%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-2 {
+    width: 16.662%; }
+
+  .col-lg-1 {
+    width: 8.332%; } }
+.container > .row {
+  border: 1px solid black; }
+
+.courseFrame {
+  background-color: #fff3f5;
+  margin: 0 auto;
+  margin-top: 5px;
+  height: 70px;
+  width: 100%;
+  border: 1px solid black; }
+
+.profile {
+  float: left;
+  width: 70px;
+  height: 70px;
+  background-color: pink; }
+
+.courseInfo {
+  line-height: 30px;
+  padding-left: 5px;
+  padding-top: 5px;
+  float: left;
+  text-overflow: ellipsis;
+  height: 70px;
+  font-size: 4vmin; }
+
+@media screen and (min-width: 480px) {
+  .profile {
+    float: none;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 20px; }
+
+  .courseFrame {
+    margin-top: 30px;
+    height: 200px;
+    width: 90%; }
+
+  .courseInfo {
+    max-height: 75px;
+    line-height: normal;
+    width: auto;
+    margin-top: 20px;
+    font-size: 1em; } }
+@media screen and (min-width: 768px) {
+  .profile {
+    width: 100px;
+    height: 100px; }
+
+  .courseFrame {
+    margin-top: 30px;
+    height: 250px;
+    width: 220px; } }
+@media screen and (min-width: 1024px) {
+  .courseFrame {
+    margin-top: 30px;
+    height: 250px;
+    width: 220px; } }
 body {
   min-width: 300px; }
 
@@ -136,12 +333,12 @@ body {
 
 .joinUsBtn {
   margin: 0 auto;
-  margin-top: 50px;
-  height: 50px;
-  width: 150px;
+  margin-top: 15px;
+  height: 25px;
+  width: 100px;
   text-align: center;
-  line-height: 50px;
-  font-size: 2em;
+  line-height: 25px;
+  font-size: 1em;
   color: white;
   border: 2px solid black; }
   .joinUsBtn:hover {
@@ -150,43 +347,53 @@ body {
 .slogan {
   color: white;
   display: block;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   text-align: center;
-  font-size: 7vmin; }
+  font-size: 1.2em; }
 
-@media screen and (min-width: 1024px) {
-  .contain-area {
-    width: 1024px; } }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
+  .joinUsBtn {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    margin-top: 5%;
+    font-size: 1.5em; }
+
+  .slogan {
+    font-size: 2em;
+    margin-top: 10%; } }
+@media screen and (min-width: 768px) {
   .joinUsBtn {
     margin-top: 5%;
     font-size: 1.5em;
-    height: 30%;
-    width: 50%; } }
-@media screen and (max-width: 480px) {
-  .joinUsBtn {
-    height: 40px;
-    line-height: 40px;
-    width: 100px;
-    margin-top: 10px;
-    font-size: 7vmin; } }
-@media screen and (max-width: 768px) {
-  .joinUsBtn {
-    margin-top: 5%;
-    font-size: 1em;
-    height: 30px;
-    line-height: 30px;
-    width: 100px; }
+    height: 50px;
+    line-height: 50px;
+    width: 150px; }
 
   .mask {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 80%;
-    height: 60%; }
+    position: absolute; }
 
   .slogan {
-    margin-top: 20px; } }
+    font-size: 3em;
+    margin-top: 10%; } }
+@media screen and (min-width: 1024px) {
+  .contain-area {
+    width: 1024px; }
+
+  .joinUsBtn {
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    color: white;
+    border: 2px solid black; }
+
+  .slogan {
+    font-size: 4em;
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=homePage.css.map */

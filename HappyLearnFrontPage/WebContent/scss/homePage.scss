@@ -1,5 +1,5 @@
 @import "nav";
-
+@import "courseLayout";
 body{
     min-width: 300px;
 }
@@ -40,12 +40,12 @@ body{
 
 .joinUsBtn{
   margin: 0 auto;
-  margin-top: 50px;
-  height: 50px;
-  width: 150px;
+  margin-top: 15px;
+  height: 25px;
+  width: 100px;
   text-align: center;
-  line-height: 50px;
-  font-size: 2em;
+  line-height: 25px;
+  font-size: 1em;
   color: white;
   border: 2px solid black;
   &:hover{
@@ -57,54 +57,65 @@ body{
 .slogan{
   color: white;
   display: block;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   text-align: center;
-  font-size: 7vmin;
+  font-size: 1.2em;
 }
 
-@media screen and (min-width: $LG) {
-  .contain-area{
-    width: $LG;
-  }
-}
-@media screen and (max-width: $SM) {
-  .joinUsBtn{
-    margin-top: 5%;
-    font-size: 1.5em;
-    height: 30%;
-    width: 50%;
-  }
-}
 
-@media screen and (max-width: $XS) {
-  .joinUsBtn{
-    height: 40px;
-    line-height: 40px;
-    width: 100px;
-    margin-top: 10px;
-    font-size: 7vmin;
-  }
-}
 
-@media screen and (max-width: $SM) {
+@media screen and (min-width: $XS) {
   .joinUsBtn{
-    margin-top: 5%;
-    font-size: 1em;
     height: 30px;
     line-height: 30px;
     width: 100px;
+    margin-top: 5%;
+    font-size: 1.5em;
+  }
+
+  .slogan{
+    font-size: 2em;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: $SM) {
+  .joinUsBtn{
+    margin-top: 5%;
+    font-size: 1.5em;
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
   }
 
   .mask{
     position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 80%;
-    height: 60%;
   }
 
   .slogan{
-    margin-top: 20px;
+    font-size: 3em;
+    margin-top: 10%;
   }
 }
+@media screen and (min-width: $LG) {
+  .contain-area{
+    width: $LG;
+  }
+  .joinUsBtn{
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    color: white;
+    border: 2px solid black;
+    }
+
+    .slogan{
+      font-size: 4em;
+      margin-top: 50px;
+    }
+  }
