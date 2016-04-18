@@ -1,0 +1,53 @@
+@import "gridSystem";
+$height-md:250px;
+$height-sm:250px;
+$height-xs:200px;
+$width-md:220px;
+$width-sm:220px;
+$width-xs:210px;
+
+.container>.row{
+  border:1px solid black;
+}
+
+.courseFrame{
+  margin: 0 auto;
+  margin-top: 30px;
+  height:100px;
+  width: 100%;
+  border:1px solid black;
+}
+
+
+.profile{
+}
+
+@media screen and (min-width: 480px) {
+  .profile{
+  }
+  .courseFrame{
+    margin-top: 30px;
+    height:$height-xs;
+    width: $width-xs;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile{
+  }
+  .courseFrame{
+    margin-top: 30px;
+    height:$height-sm;
+    width: $width-sm;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile{
+  }
+  .courseFrame{
+    margin-top: 30px;
+    height:$height-md;
+    width: $width-md;
+  }
+}

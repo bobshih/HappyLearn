@@ -1,10 +1,13 @@
 @import "nav";
 
+body{
+    min-width: 300px;
+}
 // joinUsImg
 .joinUsImg{
+  margin-top: 30px;
   display: block;
   max-width: 100%;
-  height: auto;
   @include  blurer(3);
 }
 // [END] joinUsImg
@@ -12,7 +15,11 @@
 // container
 .container
 {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 1024px;
   position: relative;
+  box-sizing: border-box;
 }
 // [END] container
 
@@ -25,21 +32,21 @@
 .mask{
   position: absolute;
   top: 20%;
-  left: 25%;
-  width: 50%;
-  height: 40%;
-  background-color: rgba(black,.3);
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  background-color: rgba(black,.4);
 }
 
 .joinUsBtn{
   margin: 0 auto;
-  margin-top: 18%;
+  margin-top: 50px;
   height: 50px;
   width: 150px;
   text-align: center;
   line-height: 50px;
   font-size: 2em;
-    color: white;
+  color: white;
   border: 2px solid black;
   &:hover{
     @extend %cursorPointer;
@@ -48,12 +55,11 @@
 }
 
 .slogan{
-    color: white;
+  color: white;
   display: block;
-  margin: 0 auto;
+  margin-top: 50px;
   width: 100%;
   text-align: center;
-  margin: 0 auto;
   font-size: 7vmin;
 }
 
@@ -65,7 +71,7 @@
 @media screen and (max-width: $SM) {
   .joinUsBtn{
     margin-top: 5%;
-    font-size: 5vmin;
+    font-size: 1.5em;
     height: 30%;
     width: 50%;
   }
@@ -73,9 +79,32 @@
 
 @media screen and (max-width: $XS) {
   .joinUsBtn{
-    height: 30%;
-    width: 50%;
-    margin-top: 5%;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    margin-top: 10px;
     font-size: 7vmin;
+  }
+}
+
+@media screen and (max-width: $SM) {
+  .joinUsBtn{
+    margin-top: 5%;
+    font-size: 1em;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+  }
+
+  .mask{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+  }
+
+  .slogan{
+    margin-top: 20px;
   }
 }
