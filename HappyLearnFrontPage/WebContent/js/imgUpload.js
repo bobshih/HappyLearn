@@ -19,6 +19,7 @@ $(function (){
 
             reader.readAsDataURL(input.files[0]);
     }
+  }
 
     $("body").on("change", ".upl", function (){
         preview(this);
