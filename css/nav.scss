@@ -1,0 +1,135 @@
+$navBgc:#f4f7f7;
+$navMenuIcon:(hover:white,normal:#e3dede);
+
+body{
+  margin: 0;
+  padding: 0;
+}
+// element
+%cursorPointer
+{
+  cursor: pointer;
+}
+// [END] element
+// topNavBg
+.topNavBg{
+  position: relative;
+  height: 50px;
+  padding: 5px;
+  background-color:$navBgc ;
+  box-sizing: border-box;
+}
+// [END] topNavBg
+
+// topNav
+.topNav{
+  display:block;
+  margin: 0 auto;
+}
+// [END] topNav
+
+// navMenuIconBg navMenuIcon hamberger
+ .navMenuIconBg{height:40px; width:40px;background-color:
+$navBgc; display:block; position:relative;float: right;
+&:hover{
+  background-color: darken($navBgc,5%);
+  @extend %cursorPointer;
+   > .navMenuIcon{
+    background: map-get($navMenuIcon, hover);
+    box-shadow:0 12px map-get($navMenuIcon, hover), 0 24px map-get($navMenuIcon, hover);
+  }
+}
+}
+
+.navMenuIcon{content:'';margin-left:5px; height:6px; width:30px; background:map-get($navMenuIcon, normal);
+   border-radius:4px;
+   -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  display:block;
+  position:absolute;
+  top:5px;
+   left:0;
+  box-shadow:0 12px map-get($navMenuIcon, normal), 0 24px map-get($navMenuIcon, normal);
+  -webkit-box-shadow:0 12px map-get($navMenuIcon, normal), 0 24px map-get($navMenuIcon, normal);
+  -moz-box-shadow:0 12px map-get($navMenuIcon, normal), 0 24px map-get($navMenuIcon, normal);
+}
+// [END] navMenuIconBg navMenuIcon hamberger
+
+// hlIcon
+.hlIcon
+{
+  widows: 40px;
+  height: 40px;
+}
+// [END] hlIcon
+
+// navLink
+.navLink
+{
+  margin-right:5px ;
+  height: 40px;
+  position:relative;
+  float: right;
+  color:black;
+  padding: 2px;
+  line-height:40px;
+  box-sizing: border-box;
+  text-align: center;
+  &:hover{
+    @extend %cursorPointer;
+    background-color: darken($navBgc,5%);
+  }
+}
+// [END] navLink
+
+// navMenuSlidebar
+.navMenuSlidebar
+{
+  position: fixed;
+  top:50px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: yellow;
+}
+.menuLink
+{
+  text-align: center;
+  line-height:40px;
+  width: 100%;
+  height: 40px;
+  &:hover{
+    @extend %cursorPointer;
+    background-color: darken(yellow, 5%);
+  }
+}
+// [END] navMenuSlidebar
+@media screen and (max-width: 480px) {
+
+  .hideXS
+  {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+
+  .hideSM
+  {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+	.topNav {
+    height: 50px;
+		width: 70%;
+
+	}
+
+  .hideLG
+  {
+    display: none;
+  }
+}
