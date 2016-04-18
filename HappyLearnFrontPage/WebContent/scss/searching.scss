@@ -1,0 +1,36 @@
+// searching bar settings
+$avdv: green;
+$background:yellow;
+
+body {
+    // color: $avdv;
+}
+
+.searchingbar{
+    border-radius: 40px;
+    width: 300px;
+    padding: 10px 0px 0px 10px;
+    background-color: $background;
+}
+
+@media screen and (max-width: 768px) {
+    .searchingbar{
+        display: none;
+    }
+	.container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+    .searchingbar{
+        display: none;
+    }
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
