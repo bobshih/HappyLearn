@@ -1,0 +1,64 @@
+$large: 1024px;
+$medium: 768px;
+$small: 480px;
+
+body{
+}
+
+.content {
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    @media screen and (min-width: $small), (max-width: $small) {
+        width: 480px;
+        > h1 {
+            color: red;
+        }
+    }
+    @media screen and (min-width: $medium) {
+        width: 768px;
+        > h1 {
+            color: yellow;
+        }
+    }
+    @media screen and (min-width: $large) {
+        > h1 {
+            color: green;
+        }
+    }
+}
+
+Table {
+    text-align: right;
+}
+input {
+    width: 15em;
+}
+.FieldName {
+    width: 7.5em;
+}
+
+.tab {
+    width: 2em;
+}
+.InputElement{
+    text-align: left;
+    @media screen and (min-width: $small), (max-width: $small) {
+        font-size: 1.5em;
+        > h1 {
+            color: red;
+        }
+    }
+    @media screen and (min-width: $medium) {
+        width: 768px;
+        > h1 {
+            color: yellow;
+        }
+    }
+    @media screen and (min-width: $large) {
+        > h1 {
+            color: green;
+        }
+    }
+}

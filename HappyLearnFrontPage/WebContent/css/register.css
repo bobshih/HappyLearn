@@ -1,0 +1,48 @@
+.content {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px; }
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    .content {
+      width: 480px; }
+      .content > h1 {
+        color: red; } }
+  @media screen and (min-width: 768px) {
+    .content {
+      width: 768px; }
+      .content > h1 {
+        color: yellow; } }
+  @media screen and (min-width: 1024px) {
+    .content > h1 {
+      color: green; } }
+
+Table {
+  text-align: right; }
+
+input {
+  width: 15em; }
+
+.FieldName {
+  width: 7.5em; }
+
+.tab {
+  width: 2em; }
+
+.InputElement {
+  text-align: left; }
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    .InputElement {
+      font-size: 1.5em; }
+      .InputElement > h1 {
+        color: red; } }
+  @media screen and (min-width: 768px) {
+    .InputElement {
+      width: 768px; }
+      .InputElement > h1 {
+        color: yellow; } }
+  @media screen and (min-width: 1024px) {
+    .InputElement > h1 {
+      color: green; } }
+
+/*# sourceMappingURL=register.css.map */
