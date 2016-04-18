@@ -1,0 +1,81 @@
+@import "nav";
+
+// joinUsImg
+.joinUsImg{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @include  blurer(3);
+}
+// [END] joinUsImg
+
+// container
+.container
+{
+  position: relative;
+}
+// [END] container
+
+// contain-area
+.contain-area{
+  margin: 0 auto;
+}
+// [END] contain-area
+
+.mask{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  height: 40%;
+  background-color: rgba(black,.3);
+}
+
+.joinUsBtn{
+  margin: 0 auto;
+  margin-top: 18%;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+    color: white;
+  border: 2px solid black;
+  &:hover{
+    @extend %cursorPointer;
+    background-color: rgba(white,.5);
+  }
+}
+
+.slogan{
+    color: white;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 7vmin;
+}
+
+@media screen and (min-width: $LG) {
+  .contain-area{
+    width: $LG;
+  }
+}
+@media screen and (max-width: $SM) {
+  .joinUsBtn{
+    margin-top: 5%;
+    font-size: 5vmin;
+    height: 30%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: $XS) {
+  .joinUsBtn{
+    height: 30%;
+    width: 50%;
+    margin-top: 5%;
+    font-size: 7vmin;
+  }
+}
