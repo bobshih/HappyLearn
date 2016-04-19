@@ -8,9 +8,7 @@ $(document).ready(
                 dataType: "text",
                 url: url,
                 success: function(data) {
-                    alert("here");
                     if (data === "[]") {
-                        alert("json is null");
                         $('#login').attr("disabled", false);
                         return;
                     }
@@ -31,6 +29,10 @@ $(document).ready(
         }
         selfInfo();
 
-        var 
+        $("input[name='modifySkill']").click(
+            function(){
+                $('#wrapper').toggle();
+            }
+        );
     }
 );

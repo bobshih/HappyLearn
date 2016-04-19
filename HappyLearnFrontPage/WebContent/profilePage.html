@@ -54,43 +54,51 @@
         <!-- 選單，LG隱藏 -->
       </div>
     </div>
-
+    <div id="wrapper">
+        <div id="addMemberWindow" class="addMemberWindow">
+        </div>
+    </div>
     <div class="content">
-      <!-- Toggle #1 -->
-      <div class="toggle">
-        <!-- Toggle Link -->
-        <a href="#" title="自我資訊" class="toggle-trigger">基本資訊</a>
+        <!-- Toggle #1 -->
+        <div class="toggle">
+            <!-- Toggle Link -->
+            <a href="#" title="自我資訊" class="toggle-trigger">基本資訊</a>
 
-        <!-- Toggle Content to display -->
-        <div class="toggle-content">
-          <input type="hidden" id="uid" value="">
-          <input type="hidden" id="pass" value="">
-          <table>
-            <tr>
-              <td>
-                姓名：
-              </td>
-              <td id="unickname">
-                123
-              </td>
-            </tr>
-            <tr>
-              <td>
-                電子信箱：
-              </td>
-              <td id="uemail">
-                rerer
-              </td>
-            </tr>
-            <tr>
-              <td>
-                專業技能：
-              </td>
-              <td id="uskill">
-                sdf
-              </td>
-            </tr>
-          </table>
+            <!-- Toggle Content to display -->
+            <div class="toggle-content">
+                <input type="hidden" id="uid" value="">
+                <input type="hidden" id="pass" value="">
+                <table>
+                    <tr>
+                        <td class="attr">
+                            姓名：
+                        </td>
+                        <td id="unickname" class="field">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attr">
+                            電子信箱：
+                        </td>
+                        <td id="uemail" class="field">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attr">
+                            專業技能：
+                        </td>
+                        <td id="uskill" class="field"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" name="modifySkill" value="修改專業技能">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- .toggle (end) -->
         </div>
         <!-- .toggle (end) -->
       </div>
@@ -222,8 +230,8 @@
       <!-- .toggle (end) -->
     </div>
     <div class="footer container"></div>
-
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/testLogin.js"></script>
     <script src="js/menuSlidebar.js"></script>
     <script src="js/contenttoggle.js"></script>
     <script src="js/profilePagePrepare.js"></script>
