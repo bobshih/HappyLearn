@@ -8,7 +8,10 @@ $toggleBackground: #E2ECCC;
     height: 100%;
     text-align: center;
     padding-top: 20px;
-    @media screen and (min-width: $small), (max-width: $small) {
+    @media screen and (max-width: $small) {
+        width: 300px;
+    }
+    @media screen and (min-width: $small) {
         width: 480px;
     }
     @media screen and (min-width: $medium) {
