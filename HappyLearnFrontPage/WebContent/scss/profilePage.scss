@@ -1,0 +1,72 @@
+$large: 1024px;
+$medium: 768px;
+$small: 480px;
+$toggleBackground: #E2ECCC;
+// setting content
+.content {
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    @media screen and (min-width: $small), (max-width: $small) {
+        width: 480px;
+    }
+    @media screen and (min-width: $medium) {
+        width: 768px;
+    }
+    @media screen and (min-width: $large) {
+        width: 974px;
+    }
+}
+// content toggle css setting
+/* Main toggle */
+.toggle {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Main background */
+    background: #ffffff;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    a.toggle-trigger {
+        /* Toggle Link text */
+        display: block;
+        padding: 10px 20px 15px;
+        position: relative;
+        text-decoration: none;
+        color: #666;
+        &:hover {
+            /* Toggle Link hover state */
+            opacity: 0.8;
+            text-decoration: none;
+        }
+        &::before {
+            /* Lets add a "-" before the toggle link */
+            content: "-";
+            /* You can add any symbol, font icon, or graphic icon */
+            margin-right: 10px;
+            font-size: 1.3em;
+        }
+    }
+    a.active {
+        /* Toggle link when clicked */
+        text-decoration: none;
+        border-bottom: 1px solid #e5e5e5;
+        -webkit-box-shadow: 0 8px 6px -6px #ccc;
+        -moz-box-shadow: 0 8px 6px -6px #ccc;
+        box-shadow: 0 8px 6px -6px #ccc;
+        color: #000;
+    }
+    a.active.toggle-trigger:before {
+        /* When the toggle is active, change the "-" to a "+" */
+        content: "+";
+    }
+    .toggle-content {
+        /* The content of the toggle */
+        padding: 10px 20px 15px;
+        color: #666;
+    }
+}

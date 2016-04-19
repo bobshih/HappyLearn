@@ -16,9 +16,6 @@ body {
     }
     @media screen and (min-width: $medium) {
         width: 768px;
-        > h1 {
-            background: yellow;
-        }
     }
 }
 // wrapper

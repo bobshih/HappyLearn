@@ -11,9 +11,7 @@ body {
       width: 480px; } }
   @media screen and (min-width: 768px) {
     .content {
-      width: 768px; }
-      .content > h1 {
-        background: yellow; } }
+      width: 768px; } }
 
 .wrapper {
   position: relative;

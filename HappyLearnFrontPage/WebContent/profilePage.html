@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>template</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/profilePage.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <!-- 頂端的導覽列，包含icon、登入、註冊...等選項 -->
     <div class="topNavBg">
@@ -27,12 +30,42 @@
         <div class="navMenuSlidebar hideLG hideSM">
             <div href="" class="menuLink">登入</div>
             <div href="" class="menuLink">註冊</div>
-
         </div>
         <!-- 選單，LG隱藏 -->
     </div>
 
+    <div class="content">
+        <!-- Toggle #1 -->
+        <div class="toggle">
+            <!-- Toggle Link -->
+            <a href="#" title="Title of Toggle" class="toggle-trigger">This is a title for my toggle</a>
+
+            <!-- Toggle Content to display -->
+            <div class="toggle-content">
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>
+            <!-- .toggle-content (end) -->
+        </div>
+        <!-- .toggle (end) -->
+
+        <!-- Toggle #2 -->
+        <div class="toggle">
+
+            <!-- Toggle Link -->
+            <a href="#" title="Title of Toggle" class="toggle-trigger">This is my second toggle</a>
+
+            <!-- Toggle Content to display -->
+            <div class="toggle-content">
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>
+            <!-- .toggle-content (end) -->
+        </div>
+        <!-- .toggle (end) -->
+    </div>
+
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="js/menuSlidebar.js"></script>
+    <script src="js/contenttoggle.js"></script>
 </body>
+
 </html>
