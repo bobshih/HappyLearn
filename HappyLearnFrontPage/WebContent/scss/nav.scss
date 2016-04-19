@@ -28,13 +28,16 @@ body{
 
 // [END] blur tool
 
-// topNavBg
+// topNavBg whole div
 .topNavBg{
   position: relative;
   height: 50px;
   padding: 5px;
   background-color:$navBgc ;
   box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: 2px 0 2px rgba(20%,20%,40%,0.6),4px 0 6px rgba(20%,20%,40%,0.4),6px 0 12px rgba(20%,20%,40%,0.4);
 }
 // [END] topNavBg
 
@@ -128,20 +131,7 @@ $navBgc; display:block; position:relative;float: right;
   }
 }
 // [END] navMenuSlidebar
-@media screen and (max-width: $XS) {
 
-  .hideXS
-  {
-    display: none;
-  }
-}
-@media screen and (min-width: $XS) {
-
-  .hideSM
-  {
-    display: none;
-  }
-}
 
 @media screen and (min-width: $LG) {
 
@@ -152,6 +142,20 @@ $navBgc; display:block; position:relative;float: right;
 	}
 
   .hideLG
+  {
+    display: none;
+  }
+}
+@media screen and (min-width: $SM) {
+
+  .hideSM
+  {
+    display: none;
+  }
+}
+@media screen and (min-width: $XS) {
+
+  .hideXS
   {
     display: none;
   }

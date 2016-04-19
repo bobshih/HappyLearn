@@ -10,7 +10,10 @@ body {
   height: 50px;
   padding: 5px;
   background-color: #f4f7f7;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: 2px 0 2px rgba(51, 51, 102, 0.6), 4px 0 6px rgba(51, 51, 102, 0.4), 6px 0 12px rgba(51, 51, 102, 0.4); }
 
 .topNav {
   display: block;
@@ -86,18 +89,18 @@ body {
   .menuLink:hover {
     background-color: #e5e600; }
 
-@media screen and (max-width: 480px) {
-  .hideXS {
-    display: none; } }
-@media screen and (min-width: 480px) {
-  .hideSM {
-    display: none; } }
 @media screen and (min-width: 1024px) {
   .topNav {
     height: 50px;
     width: 1024px; }
 
   .hideLG {
+    display: none; } }
+@media screen and (min-width: 768px) {
+  .hideSM {
+    display: none; } }
+@media screen and (min-width: 480px) {
+  .hideXS {
     display: none; } }
 
 /*# sourceMappingURL=nav.css.map */
