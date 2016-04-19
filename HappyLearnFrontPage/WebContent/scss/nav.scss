@@ -136,26 +136,20 @@ body {
   }
 }
 // [END] navMenuSlidebar
-@media screen and (max-width: $XS) {
-  .hideXS {
-    display: none;
-  }
-}
-@media screen and (min-width: $XS +1)and (max-width: $SM -(1)) {
-  .hideSM {
-    display: none;
-  }
-}
-@media screen and (min-width: $SM)  {
-
-  .hideLG {
-    display: none;
-  }
-}
 @media screen and (min-width: $LG)  {
   .topNav {
     height: 50px;
     width: $LG;
   }
+}
+@media screen and  (max-width: $XS ) {
+  .hideXS{
+    display: none;
+  }
+}
 
+@media screen and  (min-width: $XS ) {
+  .hideSM {
+    display: none;
+  }
 }

@@ -96,18 +96,15 @@ body {
   .menuLink:hover {
     background-color: #e5e600; }
 
-@media screen and (max-width: 480px) {
-  .hideXS {
-    display: none; } }
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .hideSM {
-    display: none; } }
-@media screen and (min-width: 768px) {
-  .hideLG {
-    display: none; } }
 @media screen and (min-width: 1024px) {
   .topNav {
     height: 50px;
     width: 1024px; } }
+@media screen and (max-width: 480px) {
+  .hideXS {
+    display: none; } }
+@media screen and (min-width: 480px) {
+  .hideSM {
+    display: none; } }
 
 /*# sourceMappingURL=nav.css.map */

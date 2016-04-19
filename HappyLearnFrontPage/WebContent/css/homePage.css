@@ -96,19 +96,16 @@ body {
   .menuLink:hover {
     background-color: #e5e600; }
 
-@media screen and (max-width: 480px) {
-  .hideXS {
-    display: none; } }
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .hideSM {
-    display: none; } }
-@media screen and (min-width: 768px) {
-  .hideLG {
-    display: none; } }
 @media screen and (min-width: 1024px) {
   .topNav {
     height: 50px;
     width: 1024px; } }
+@media screen and (max-width: 480px) {
+  .hideXS {
+    display: none; } }
+@media screen and (min-width: 480px) {
+  .hideSM {
+    display: none; } }
 /* Grid */
 .col {
   width: 100%;
@@ -251,7 +248,6 @@ body {
   border: 1px solid black; }
 
 .courseFrame {
-  background-color: #fff3f5;
   margin: 0 auto;
   margin-top: 5px;
   height: 70px;
@@ -259,44 +255,20 @@ body {
   border: 1px solid black; }
 
 .profile {
-  float: left;
   width: 70px;
   height: 70px;
   background-color: pink; }
 
-.courseInfo {
-  line-height: 30px;
-  padding-left: 5px;
-  padding-top: 5px;
-  float: left;
-  text-overflow: ellipsis;
-  height: 70px;
-  font-size: 4vmin; }
-
 @media screen and (min-width: 480px) {
   .profile {
-    float: none;
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    margin-top: 20px; }
+    width: 70px;
+    height: 70px; }
 
   .courseFrame {
     margin-top: 30px;
     height: 200px;
-    width: 90%; }
-
-  .courseInfo {
-    max-height: 75px;
-    line-height: normal;
-    width: auto;
-    margin-top: 20px;
-    font-size: 1em; } }
+    width: 210px; } }
 @media screen and (min-width: 768px) {
-  .profile {
-    width: 100px;
-    height: 100px; }
-
   .courseFrame {
     margin-top: 30px;
     height: 250px;
