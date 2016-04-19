@@ -31,7 +31,6 @@ a {
   cursor: pointer; }
 
 .topNavBg {
-  position: relative;
   height: 50px;
   padding: 5px;
   background-color: white;
@@ -320,6 +319,12 @@ a {
   height: 35px;
   text-overflow: ellipsis;
   color: red; }
+
+.coursePop {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed; }
 
 .filterBar {
   border-radius: 5px;

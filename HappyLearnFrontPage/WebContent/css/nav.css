@@ -31,7 +31,6 @@ a {
   cursor: pointer; }
 
 .topNavBg {
-  position: relative;
   height: 50px;
   padding: 5px;
   background-color: white;

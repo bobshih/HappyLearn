@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>template</title>
     <link rel="stylesheet" href="css/nav.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 頂端的導覽列，包含icon、登入、註冊...等選項 -->
     <div class="topNavBg">
-        <div class="topNav">
-            <div class="icon">
-                <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">
-                <span>Happy Laern</span>
-            </div>
-
-            <span class="navMenuIconBg hideLG hideSM">
-        <span class="navMenuIcon "></span>
-            </span>
-
-            <div class="navLink  hideXS">登入</div>
-            <div class="navLink  hideXS">註冊</div>
+      <div class="topNav">
+        <div class="icon">
+          <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">
+          <span>Happy Laern</span>
         </div>
+        <span class="navMenuIconBg hideLG hideSM">
+          <span class="navMenuIcon "></span>
+        </span>
+        <a href="courses.html">
+          <div id="courseLink" class="navLink  hideXS">課程</div>
+        </a>
+        <a href="profilePage.html">
+          <div id="profileLink" class="navLink  hideXS">主頁</div>
+        </a>
+        <a href="login.html">
+          <div id="loginLink" class="navLink  hideXS">登入</div>
+        </a>
+        <a href="register.html">
+          <div id="registerLink" class="navLink  hideXS">註冊</div>
+        </a>
+      </div>
 
-        <div class="navMenuSlidebar hideLG hideSM">
-            <div href="" class="menuLink">登入</div>
-            <div href="" class="menuLink">註冊</div>
+      <div class="navMenuSlidebar hideLG hideSM">
+        <a href="courses.html">
+          <div id="courseLink" class="menuLink  ">課程</div>
+        </a>
+        <a href="profilePage.html">
+          <div id="profileLink" class="menuLink  ">主頁</div>
+        </a>
+        <a href="login.html">
+          <div id="loginLink" href="" class="menuLink">登入</div>
+        </a>
+        <a href="register.html">
+          <div id="registerLink" href="" class="menuLink">註冊</div>
+        </a>
 
-        </div>
-        <!-- 選單，LG隱藏 -->
+      </div>
+      <!-- 選單，LG隱藏 -->
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="js/menuSlidebar.js"></script>
-</body>
+  </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Profile Page</title>
@@ -10,191 +10,216 @@
     <link rel="stylesheet" href="css/courseLayout.css">
     <link rel="stylesheet" href="css/profilePage.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- 頂端的導覽列，包含icon、登入、註冊...等選項 -->
     <div class="topNavBg">
-        <div class="topNav">
-            <div class="icon">
-                <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">
-                <span>Happy Laern</span>
-            </div>
-
-            <span class="navMenuIconBg hideLG hideSM">
-        <span class="navMenuIcon "></span>
-            </span>
-
-            <div class="navLink  hideXS">登入</div>
-            <div class="navLink  hideXS">註冊</div>
+      <div class="topNav">
+        <div class="icon">
+          <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">
+          <span>Happy Laern</span>
         </div>
 
-        <div class="navMenuSlidebar hideLG hideSM">
-            <div href="" class="menuLink">登入</div>
-            <div href="" class="menuLink">註冊</div>
-        </div>
+        <span class="navMenuIconBg hideLG hideSM">
+          <span class="navMenuIcon "></span>
+        </span>
+        <a href="courses.html">
+          <div id="courseLink" class="navLink  hideXS">課程</div>
+        </a>
+        <a href="profilePage.html">
+          <div id="profileLink" class="navLink  hideXS">主頁</div>
+        </a>
+        <a href="login.html">
+          <div id="loginLink" class="navLink  hideXS">登入</div>
+        </a>
+        <a href="register.html">
+          <div id="registerLink" class="navLink  hideXS">註冊</div>
+        </a>
+      </div>
+
+      <div class="navMenuSlidebar hideLG hideSM">
+        <a href="courses.html">
+          <div id="courseLink" class="menuLink  ">課程</div>
+        </a>
+        <a href="profilePage.html">
+          <div id="profileLink" class="menuLink  ">主頁</div>
+        </a>
+        <a href="login.html">
+          <div id="loginLink" href="" class="menuLink">登入</div>
+        </a>
+        <a href="register.html">
+          <div id="registerLink" href="" class="menuLink">註冊</div>
+        </a>
         <!-- 選單，LG隱藏 -->
+      </div>
     </div>
 
     <div class="content">
-        <!-- Toggle #1 -->
-        <div class="toggle">
-            <!-- Toggle Link -->
-            <a href="#" title="自我資訊" class="toggle-trigger">基本資訊</a>
+      <!-- Toggle #1 -->
+      <div class="toggle">
+        <!-- Toggle Link -->
+        <a href="#" title="自我資訊" class="toggle-trigger">基本資訊</a>
 
-            <!-- Toggle Content to display -->
-            <div class="toggle-content">
-                <input type="hidden" id="uid" value="">
-                <input type="hidden" id="pass" value="">
-                <table>
-                    <tr>
-                        <td>
-                            姓名：
-                        </td>
-                        <td id="unickname">
-                            123
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            電子信箱：
-                        </td>
-                        <td id="uemail">
-                            rerer
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            專業技能：
-                        </td>
-                        <td id="uskill">
-                            sdf
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        <!-- .toggle (end) -->
+        <!-- Toggle Content to display -->
+        <div class="toggle-content">
+          <input type="hidden" id="uid" value="">
+          <input type="hidden" id="pass" value="">
+          <table>
+            <tr>
+              <td>
+                姓名：
+              </td>
+              <td id="unickname">
+                123
+              </td>
+            </tr>
+            <tr>
+              <td>
+                電子信箱：
+              </td>
+              <td id="uemail">
+                rerer
+              </td>
+            </tr>
+            <tr>
+              <td>
+                專業技能：
+              </td>
+              <td id="uskill">
+                sdf
+              </td>
+            </tr>
+          </table>
         </div>
+        <!-- .toggle (end) -->
+      </div>
 
+      <!-- Toggle #2 -->
+      <div class="toggle">
 
-        <!-- Toggle #2 -->
-        <div class="toggle">
+        <!-- Toggle Link -->
+        <a href="#" title="我開設的課程" class="toggle-trigger">我開設的課程資訊</a>
 
-            <!-- Toggle Link -->
-            <a href="#" title="我開設的課程" class="toggle-trigger">我開設的課程資訊</a>
-
-            <!-- Toggle Content to display -->
-            <div class="toggle-content">
-                dfghjkl
-            </div>
+        <!-- Toggle Content to display -->
+        <div class="toggle-content">
+          dfghjkl
+        </div>
         <!-- .toggle-content (end) -->
-        </div>
+      </div>
 
-        <!-- Toggle #3 -->
-        <div class="toggle">
+      <!-- Toggle #3 -->
+      <div class="toggle">
 
-            <!-- Toggle Link -->
-            <a href="#" title="我參加的課程" class="toggle-trigger">我參加的課程資料</a>
+        <!-- Toggle Link -->
+        <a href="#" title="我參加的課程" class="toggle-trigger">我參加的課程資料</a>
 
-            <!-- Toggle Content to display -->
-            <div class="toggle-content ">
-                <div class="courseDiv">
-                    <div class="col col-md-4 col-sm-4 col-xs-6">
-                        <div class="courseFrame">
-                            <div class="profile"><img src="" alt="" class="profileImg"></div>
-                            <div class="courseInfo">
-                                <div class="coursePartic">
-                                    <nobr> participants:2/3</nobr>
-                                </div>
-                                <div class="courseName">
-                                    <nobr>course name:computer science1</nobr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-6">
-                        <div class="courseFrame">
-                            <div class="profile"><img src="" alt="" class="profileImg"></div>
-                            <div class="courseInfo">
-                                <div class="coursePartic">
-                                    <nobr> participants:2/3</nobr>
-                                </div>
-                                <div class="courseName">
-                                    <nobr>course name:computer science2</nobr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-6">
-                        <div class="courseFrame">
-                            <div class="profile"><img src="" alt="" class="profileImg"></div>
-                            <div class="courseInfo">
-                                <div class="coursePartic">
-                                    <nobr> participants:2/3</nobr>
-                                </div>
-                                <div class="courseName">
-                                    <nobr>course name:computer science3</nobr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-6">
-                        <div class="courseFrame">
-                            <div class="profile"><img src="" alt="" class="profileImg"></div>
-                            <div class="courseInfo">
-                                <div class="coursePartic">
-                                    <nobr> participants:2/3</nobr>
-                                </div>
-                                <div class="courseName">
-                                    <nobr>course name:computer science4</nobr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-6">
-                        <div class="courseFrame">
-                            <div class="profile"><img src="" alt="" class="profileImg"></div>
-                            <div class="courseInfo">
-                                <div class="coursePartic">
-                                    <nobr> participants:2/3</nobr>
-                                </div>
-                                <div class="courseName">
-                                    <nobr>course name:computer science5</nobr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-6">
-                        <div class="courseFrame">
-                            <div class="profile"><img src="" alt="" class="profileImg"></div>
-                            <div class="courseInfo">
-                                <div class="coursePartic">
-                                    <nobr> participants:2/3</nobr>
-                                </div>
-                                <div class="courseName">
-                                    <nobr>course name:computer science6</nobr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-4 col-sm-4 col-xs-6">
-                        <div class="courseFrame">
-                            <div class="profile"><img src="" alt="" class="profileImg"></div>
-                            <div class="courseInfo">
-                                <div class="coursePartic">
-                                    <nobr> participants:2/3</nobr>
-                                </div>
-                                <div class="courseName">
-                                    <nobr>course name:computer science7</nobr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Toggle Content to display -->
+        <div class="toggle-content ">
+          <div class="courseDiv">
+            <div class="col col-md-4 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="" alt="" class="profileImg"></div>
+                <div class="courseInfo">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:2/3</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:computer science1</nobr>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- .toggle-content (end) -->
+            <div class="col col-md-4 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="" alt="" class="profileImg"></div>
+                <div class="courseInfo">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:2/3</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:computer science2</nobr>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="" alt="" class="profileImg"></div>
+                <div class="courseInfo">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:2/3</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:computer science3</nobr>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="" alt="" class="profileImg"></div>
+                <div class="courseInfo">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:2/3</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:computer science4</nobr>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="" alt="" class="profileImg"></div>
+                <div class="courseInfo">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:2/3</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:computer science5</nobr>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="" alt="" class="profileImg"></div>
+                <div class="courseInfo">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:2/3</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:computer science6</nobr>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="" alt="" class="profileImg"></div>
+                <div class="courseInfo">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:2/3</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:computer science7</nobr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- .toggle (end) -->
+        <!-- .toggle-content (end) -->
+      </div>
+      <!-- .toggle (end) -->
     </div>
     <div class="footer container"></div>
 
@@ -202,6 +227,6 @@
     <script src="js/menuSlidebar.js"></script>
     <script src="js/contenttoggle.js"></script>
     <script src="js/profilePagePrepare.js"></script>
-</body>
+  </body>
 
 </html>
