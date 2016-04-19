@@ -51,7 +51,7 @@ $(document).ready(
             var password = $("input[name='password']").val();
             var confirm = $("input[name='confirm']").val();
             var nick = $("input[name='nickname']").val();
-            var skill = $.trim($("input[name='skill']").val());
+            var skill = $.trim($("textarea[name='skill']").val());
 
             $(this).attr("disabled", true);
             if (!testEmail(email)) {
