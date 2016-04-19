@@ -1,5 +1,5 @@
 window.onload = function() {
-    alert("It's loaded!");
+    document.getElementById('content').innerHTML="";
     var addElement = function(id, name, tid, desc, limit, now, cate) {
         var element = `
             <div class="col col-md-3 col-sm-4 col-xs-6">
@@ -18,7 +18,6 @@ window.onload = function() {
                 </div>
               </div>
             </div>`;
-        alert(element);
         return element;
     }
     var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Class";

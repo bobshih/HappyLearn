@@ -8,6 +8,9 @@ body {
   width: 100%;
   height: 20px; }
 
+a {
+  color: black; }
+
 .navMenuIconBg:hover, .navLink:hover, .menuLink:hover, .joinUsBtn:hover {
   cursor: pointer; }
 
@@ -306,12 +309,16 @@ body {
   border-radius: 5px;
   display: block;
   background-color: #FAFFFE;
-  margin: 5px auto 0;
-  height: 100%;
-  width: 220px; }
+  margin: 0 auto;
+  margin-top: 5px;
+  height: 80%;
+  width: 200px; }
   .filterBar:hover {
     box-shadow: 1px 1px 1px rgba(51, 51, 102, 0.6), 2px 2px 3px rgba(51, 51, 102, 0.4), -1px 1px 1px rgba(51, 51, 102, 0.6), -2px 2px 3px rgba(51, 51, 102, 0.4), -2px -2px 3px rgba(51, 51, 102, 0.4);
     cursor: pointer; }
+
+.courseDiv {
+  float: right; }
 
 @media screen and (min-width: 480px) {
   .filterBar {
