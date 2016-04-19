@@ -22,7 +22,6 @@ window.onload = function() {
     }
     var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Class";
 
-
     var posting = $.ajax({
         dataType: "text",
         url: url,
@@ -49,4 +48,31 @@ window.onload = function() {
             alert(errorM);
         }
     });
+
+    var getCategory = function(){
+        var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Category";
+        var posting = $.ajax({
+            dataType: "text",
+            url: url,
+            success: function(data) {
+                // alert("fff");
+                console.log(data);
+                var jsonArray = $.parseJSON(data);
+
+                for (var i in jsonArray) {
+                    var json = jsonArray[i];
+                    console.log(json);
+                    var id = json.ID;
+                    var name = json.CATEGORYNAME;
+                    var desc = json.GROUP;
+
+                    var element;
+                    $("#content").append(element);
+                }
+            },
+            error: function(xhr, status, message) {
+                var errorM = "fail to get category info because: " + message;
+                alert(errorM);
+            }
+    }
 }
