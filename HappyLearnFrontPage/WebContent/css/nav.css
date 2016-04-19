@@ -1,50 +1,113 @@
-/*
-Error: Invalid CSS after "...207a0aa939678d6": expected "{", was "}"
-        on line 52 of C:\Users\ªü¤å\Desktop\HappyLearn\HappyLearnFrontPage\WebContent\scss\nav.scss
+body {
+  background-color: #F0F5D3;
+  margin: 0;
+  padding: 0;
+  min-width: 480px; }
 
-47:     height: 50px;
-48:     padding: 5px;
-49:     background-color: $navBgc;
-50:     box-sizing: border-box;
-51: >>>>>>> 83a68867a7e67f7db22092f83207a0aa939678d6
-52: }
-53: // [END] topNavBg
-54: // topNav
-55: .topNav {
-56:     display: block;
-57:     margin: 0 auto;
+.navMenuIconBg:hover, .navLink:hover, .menuLink:hover {
+  cursor: pointer; }
 
-Backtrace:
-C:\Users\ªü¤å\Desktop\HappyLearn\HappyLearnFrontPage\WebContent\scss\nav.scss:52
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-D:/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-D:/Koala/bin/sass:18:in `load'
-D:/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...207a0aa939678d6\": expected \"{\", was \"}\"\A         on line 52 of C:\Users\ªü¤å\Desktop\HappyLearn\HappyLearnFrontPage\WebContent\scss\nav.scss\A \A 47:     height: 50px;\A 48:     padding: 5px;\A 49:     background-color: $navBgc;\A 50:     box-sizing: border-box;\A 51: >>>>>>> 83a68867a7e67f7db22092f83207a0aa939678d6\A 52: }\A 53: // [END] topNavBg\A 54: // topNav\A 55: .topNav {\A 56:     display: block;\A 57:     margin: 0 auto;"; }
+.topNavBg {
+  position: relative;
+  height: 50px;
+  padding: 5px;
+  background-color: #7BA195;
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: 2px 0 2px rgba(51, 51, 102, 0.6), 4px 0 6px rgba(51, 51, 102, 0.4), 6px 0 12px rgba(51, 51, 102, 0.4); }
+
+.topNav {
+  display: block;
+  margin: 0 auto; }
+
+.navMenuIconBg {
+  height: 40px;
+  width: 40px;
+  background-color: #7BA195;
+  display: block;
+  position: relative;
+  float: right; }
+  .navMenuIconBg:hover {
+    background-color: #6c9689; }
+    .navMenuIconBg:hover > .navMenuIcon {
+      background: white;
+      box-shadow: 0 12px white, 0 24px white; }
+
+.navMenuIcon {
+  content: '';
+  margin-left: 5px;
+  height: 6px;
+  width: 30px;
+  background: #e3dede;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  box-shadow: 0 12px #e3dede, 0 24px #e3dede;
+  -webkit-box-shadow: 0 12px #e3dede, 0 24px #e3dede;
+  -moz-box-shadow: 0 12px #e3dede, 0 24px #e3dede; }
+
+.icon {
+  display: inline;
+  font-family: Pacifico, sans-serif;
+  font-size: 35px; }
+
+.hlIcon {
+  widows: 40px;
+  height: 40px; }
+
+.navLink {
+  margin-right: 5px;
+  margin-top: 5px;
+  height: 30px;
+  position: relative;
+  float: right;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.5em; }
+  .navLink:hover {
+    background-color: #6c9689; }
+
+.navMenuSlidebar {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: yellow;
+  z-index: 999; }
+
+.menuLink {
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  height: 40px; }
+  .menuLink:hover {
+    background-color: #e5e600; }
+
+@media screen and (max-width: 480px) {
+  .hideXS {
+    display: none; } }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .hideSM {
+    display: none; } }
+@media screen and (min-width: 768px) {
+  .hideLG {
+    display: none; } }
+@media screen and (min-width: 1024px) {
+  .topNav {
+    height: 50px;
+    width: 1024px; } }
+
+/*# sourceMappingURL=nav.css.map */
