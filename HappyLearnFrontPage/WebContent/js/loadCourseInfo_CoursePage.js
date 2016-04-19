@@ -1,27 +1,27 @@
-window.onload = function() {
-    document.getElementById('content').innerHTML="";
-    var addElement = function(id, name, tid, desc, limit, now, cate) {
-        var element = `
-            <div class="col col-md-4 col-sm-4 col-xs-6">
-                <div class="courseFrame">
-                    <div class="profile"><img src="`+"img/subject/"+cate+".jpg"+`" alt="`+cate+`" class="profileImg"></div>
-                    <div class="courseInfo">
-                      <input type="hidden" name="classid" value="`+id+`">
-                      <input type="hidden" name="tid" value="`+tid+`">
-                        <div class="coursePartic">
-                            <nobr>
-                                participants:`+now+`/`+limit+`</nobr>
-                        </div>
-                        <div class="courseName">
-                            <nobr>course name:`+name+`</nobr>
-                        </div>
+var addElement = function(id, name, tid, desc, limit, now, cate) {
+    var element = `
+        <div class="col col-md-4 col-sm-4 col-xs-6">
+            <div class="courseFrame">
+                <div class="profile"><img src="`+"img/subject/"+cate+".jpg"+`" alt="`+cate+`" class="profileImg"></div>
+                <div class="courseInfo">
+                  <input type="hidden" name="classid" value="`+id+`">
+                  <input type="hidden" name="tid" value="`+tid+`">
+                    <div class="coursePartic">
+                        <nobr>
+                            participants:`+now+`/`+limit+`</nobr>
+                    </div>
+                    <div class="courseName">
+                        <nobr>course name:`+name+`</nobr>
                     </div>
                 </div>
-            </div>`;
-        return element;
-    }
-    var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Class";
+            </div>
+        </div>`;
+    return element;
+}
+window.onload = function() {
+    document.getElementById('content').innerHTML="";
 
+    var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Class";
     var posting = $.ajax({
         dataType: "text",
         url: url,
@@ -55,7 +55,6 @@ window.onload = function() {
             dataType: "text",
             url: url,
             success: function(data) {
-                // alert("fff");
                 console.log(data);
                 var jsonArray = $.parseJSON(data);
 
@@ -64,15 +63,17 @@ window.onload = function() {
                     console.log(json);
                     var id = json.ID;
                     var name = json.CATEGORYNAME;
-                    var desc = json.GROUP;
+                    var group = json.GROUP;
 
-                    var element;
-                    $("#content").append(element);
+                    var element = "<option value='"+id+"'>"+name+" - "+group+"</option>";
+                    $("select[name='categoryDrop']").append(element);
                 }
             },
             error: function(xhr, status, message) {
                 var errorM = "fail to get category info because: " + message;
                 alert(errorM);
             }
+        });
     }
+    getCategory();
 }
