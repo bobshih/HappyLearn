@@ -193,6 +193,10 @@
   display: block;
   float: right; }
 
+.filterDrop {
+  width: 100%;
+  height: 30px; }
+
 @media screen and (max-width: 1024px) {
   .hide-sm {
     display: none; } }
@@ -247,6 +251,9 @@
   .coursePartic {
     height: 25px; } }
 @media screen and (min-width: 1024px) {
+  .hide-lg-up {
+    display: none; }
+
   .courseFrame {
     margin-top: 30px;
     height: 250px;

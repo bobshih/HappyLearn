@@ -70,6 +70,10 @@ $width-xss: 210px;
   display : block;
   float:right;
 }
+.filterDrop{
+  width:100%;
+  height: 30px;
+}
 @media screen and (max-width:1024px){
   .hide-sm{display: none;}
 }
@@ -130,6 +134,7 @@ $width-xss: 210px;
     }
 }
 @media screen and (min-width: 1024px) {
+    .hide-lg-up{display: none;}
     .profile {}
     .courseFrame {
         margin-top: 30px;
