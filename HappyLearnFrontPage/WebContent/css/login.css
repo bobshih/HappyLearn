@@ -1,0 +1,8 @@
+/* redefine the top of line1 and line2*/
+.line2{
+    top: 38%;
+}
+
+.line1 {
+    top: 23%;
+}
