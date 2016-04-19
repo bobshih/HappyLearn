@@ -1,6 +1,6 @@
 $navBgc: #7BA195;
-$navMenuIcon: (hover:white,normal:#e3dede);
-$bodybackground: #F0F5D3;
+$navMenuIcon: (hover:#808080,normal:#E8E8E8);
+$bodybackground: #F7FAFA;
 $LG: 1024px;
 $SM: 768px;
 $XS: 480px;
@@ -33,15 +33,16 @@ body {
   position: relative;
   height: 50px;
   padding: 5px;
-  background-color: $navBgc;
+  background-color: white;
   box-sizing: border-box;
   margin-left: 3px;
   margin-right: 3px;
-  box-shadow: 2px 0 2px rgba(20%,20%,40%,0.6),4px 0 6px rgba(20%,20%,40%,0.4),6px 0 12px rgba(20%,20%,40%,0.4);
+  box-shadow: 2px 0 2px rgba(20%,20%,40%,0.6),4px 0 6px rgba(20%,20%,40%,0.4);
 }
 // [END] topNavBg
 // topNav
 .topNav {
+
   display: block;
   margin: 0 auto;
 }
@@ -50,18 +51,17 @@ body {
 .navMenuIconBg {
   height: 40px;
   width: 40px;
-  background-color: $navBgc;
-  display: block;
+  background-color:white;
   position: relative;
   float: right;
-  &:hover {
-    background-color: darken($navBgc,5%);
-    @extend %cursorPointer;
-    > .navMenuIcon {
-      background: map-get($navMenuIcon, hover);
-      box-shadow: 0 12px map-get($navMenuIcon, hover), 0 24px map-get($navMenuIcon, hover);
+    border: 1px solid #E8E8E8;
+    &:hover {
+      @extend %cursorPointer;
+      bgc: #808080;
     }
-  }
+    &:active {
+      box-shadow: -1px -1px 2px rgba(20%,20%,40%,0.6) inset,2px 2px 3px rgba(20%,20%,40%,0.6) inset;
+    }
 }
 .navMenuIcon {
   content: '';
@@ -83,9 +83,15 @@ body {
 // [END] navMenuIconBg navMenuIcon hamberger
 // hlIcon
 .icon {
-  display: inline;
+  display: inline-block;
   font-family: Pacifico, sans-serif;
   font-size: 35px;
+    height: 40px;
+  line-height: 40px;
+  text-align: center;
+  span{
+    font-size: 5vmin;
+  }
 }
 .hlIcon {
   widows: 40px;
@@ -94,22 +100,26 @@ body {
 // [END] hlIcon
 // navLink
 .navLink {
+
+    border-radius: 5px;
   margin-right: 5px;
   margin-top: 5px;
   height: 30px;
-  position: relative;
   float: right;
-  color: black;
+  color: #9E9E9E;
   padding-left: 5px;
   padding-right: 5px;
   line-height: 30px;
   box-sizing: border-box;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #E8E8E8;
   font-size: 1.5em;
   &:hover {
     @extend %cursorPointer;
-    background-color: darken($navBgc,5%);
+    color: #808080;
+  }
+  &:active {
+    box-shadow: -1px -1px 2px rgba(20%,20%,40%,0.6) inset,2px 2px 3px rgba(20%,20%,40%,0.6) inset;
   }
 }
 // [END] navLink
@@ -126,6 +136,7 @@ body {
   z-index: 999;
 }
 .menuLink {
+
   text-align: center;
   line-height: 40px;
   width: 100%;
@@ -139,7 +150,7 @@ body {
 @media screen and (min-width: $LG)  {
   .topNav {
     height: 50px;
-    width: $LG;
+    width: $LG - 50px;
   }
 }
 @media screen and  (max-width: $XS ) {
@@ -151,5 +162,9 @@ body {
 @media screen and  (min-width: $XS ) {
   .hideSM {
     display: none;
+  }
+  .topNav {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
