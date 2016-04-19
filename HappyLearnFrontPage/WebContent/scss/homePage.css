@@ -1,6 +1,12 @@
 body {
+  background-color: #F7FAFA;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  min-width: 480px; }
+
+.footer {
+  width: 100%;
+  height: 20px; }
 
 .navMenuIconBg:hover, .navLink:hover, .menuLink:hover, .joinUsBtn:hover {
   cursor: pointer; }
@@ -9,8 +15,11 @@ body {
   position: relative;
   height: 50px;
   padding: 5px;
-  background-color: #f4f7f7;
-  box-sizing: border-box; }
+  background-color: white;
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: 2px 0 2px rgba(51, 51, 102, 0.6), 4px 0 6px rgba(51, 51, 102, 0.4); }
 
 .topNav {
   display: block;
@@ -19,22 +28,21 @@ body {
 .navMenuIconBg {
   height: 40px;
   width: 40px;
-  background-color: #f4f7f7;
-  display: block;
+  background-color: white;
   position: relative;
-  float: right; }
+  float: right;
+  border: 1px solid #E8E8E8; }
   .navMenuIconBg:hover {
-    background-color: #e5ecec; }
-    .navMenuIconBg:hover > .navMenuIcon {
-      background: white;
-      box-shadow: 0 12px white, 0 24px white; }
+    bgc: #808080; }
+  .navMenuIconBg:active {
+    box-shadow: -1px -1px 2px rgba(51, 51, 102, 0.6) inset, 2px 2px 3px rgba(51, 51, 102, 0.6) inset; }
 
 .navMenuIcon {
   content: '';
   margin-left: 5px;
   height: 6px;
   width: 30px;
-  background: #e3dede;
+  background: #E8E8E8;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -42,30 +50,42 @@ body {
   position: absolute;
   top: 5px;
   left: 0;
-  box-shadow: 0 12px #e3dede, 0 24px #e3dede;
-  -webkit-box-shadow: 0 12px #e3dede, 0 24px #e3dede;
-  -moz-box-shadow: 0 12px #e3dede, 0 24px #e3dede; }
+  box-shadow: 0 12px #E8E8E8, 0 24px #E8E8E8;
+  -webkit-box-shadow: 0 12px #E8E8E8, 0 24px #E8E8E8;
+  -moz-box-shadow: 0 12px #E8E8E8, 0 24px #E8E8E8; }
+
+.icon {
+  display: inline-block;
+  font-family: Pacifico, sans-serif;
+  font-size: 35px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center; }
+  .icon span {
+    font-size: 5vmin; }
 
 .hlIcon {
   widows: 40px;
   height: 40px; }
 
 .navLink {
+  border-radius: 5px;
   margin-right: 5px;
   margin-top: 5px;
   height: 30px;
-  position: relative;
   float: right;
-  color: black;
+  color: #9E9E9E;
   padding-left: 5px;
   padding-right: 5px;
   line-height: 30px;
   box-sizing: border-box;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #E8E8E8;
   font-size: 1.5em; }
   .navLink:hover {
-    background-color: #e5ecec; }
+    color: #808080; }
+  .navLink:active {
+    box-shadow: -1px -1px 2px rgba(51, 51, 102, 0.6) inset, 2px 2px 3px rgba(51, 51, 102, 0.6) inset; }
 
 .navMenuSlidebar {
   display: none;
@@ -86,19 +106,20 @@ body {
   .menuLink:hover {
     background-color: #e5e600; }
 
+@media screen and (min-width: 1024px) {
+  .topNav {
+    height: 50px;
+    width: 974px; } }
 @media screen and (max-width: 480px) {
   .hideXS {
     display: none; } }
 @media screen and (min-width: 480px) {
   .hideSM {
-    display: none; } }
-@media screen and (min-width: 1024px) {
-  .topNav {
-    height: 50px;
-    width: 1024px; }
+    display: none; }
 
-  .hideLG {
-    display: none; } }
+  .topNav {
+    padding-left: 20px;
+    padding-right: 20px; } }
 /* Grid */
 .col {
   width: 100%;
@@ -241,12 +262,15 @@ body {
   border: 1px solid black; }
 
 .courseFrame {
-  background-color: #fff3f5;
-  margin: 0 auto;
-  margin-top: 5px;
+  border-radius: 5px;
+  display: block;
+  background-color: #FAFFFE;
+  margin: 5px auto 0;
   height: 70px;
-  width: 100%;
-  border: 1px solid black; }
+  width: 100%; }
+  .courseFrame:hover {
+    box-shadow: 1px 1px 1px rgba(51, 51, 102, 0.6), 2px 2px 3px rgba(51, 51, 102, 0.4), -1px 1px 1px rgba(51, 51, 102, 0.6), -2px 2px 3px rgba(51, 51, 102, 0.4), -2px -2px 3px rgba(51, 51, 102, 0.4);
+    cursor: pointer; }
 
 .profile {
   float: left;
@@ -254,30 +278,66 @@ body {
   height: 70px;
   background-color: pink; }
 
+.profileImg {
+  width: inherit; }
+
 .courseInfo {
   line-height: 30px;
-  padding-left: 5px;
+  padding-left: 75px;
   padding-top: 5px;
-  float: left;
+  width: auto;
   text-overflow: ellipsis;
   height: 70px;
-  font-size: 4vmin; }
+  font-size: 1em; }
+
+.courseName {
+  width: auto;
+  height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.coursePartic {
+  overflow: hidden;
+  height: 35px;
+  text-overflow: ellipsis;
+  color: red; }
+
+.filterBar {
+  border-radius: 5px;
+  display: block;
+  background-color: #FAFFFE;
+  margin: 5px auto 0;
+  height: 100%;
+  width: 220px; }
+  .filterBar:hover {
+    box-shadow: 1px 1px 1px rgba(51, 51, 102, 0.6), 2px 2px 3px rgba(51, 51, 102, 0.4), -1px 1px 1px rgba(51, 51, 102, 0.6), -2px 2px 3px rgba(51, 51, 102, 0.4), -2px -2px 3px rgba(51, 51, 102, 0.4);
+    cursor: pointer; }
 
 @media screen and (min-width: 480px) {
+  .filterBar {
+    position: fixed;
+    float: none; }
+
+  .courseZoneTitle {
+    margin: 0 auto;
+    text-align: center; }
+
   .profile {
     float: none;
     width: 90px;
     height: 90px;
-    margin: 0 auto;
-    margin-top: 20px; }
+    margin: 20px auto 0; }
 
   .courseFrame {
+    border-top: 1px solid white;
     margin-top: 30px;
     height: 200px;
     width: 90%; }
 
   .courseInfo {
-    max-height: 75px;
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 75px;
     line-height: normal;
     width: auto;
     margin-top: 20px;
@@ -290,7 +350,16 @@ body {
   .courseFrame {
     margin-top: 30px;
     height: 250px;
-    width: 220px; } }
+    width: 220px; }
+
+  .courseInfo {
+    height: 100px; }
+
+  .courseName {
+    height: 70px; }
+
+  .coursePartic {
+    height: 25px; } }
 @media screen and (min-width: 1024px) {
   .courseFrame {
     margin-top: 30px;
@@ -299,11 +368,14 @@ body {
 body {
   min-width: 300px; }
 
+a {
+  text-decoration: none; }
+
 .joinUsImg {
   margin-top: 30px;
   display: block;
   max-width: 100%;
-  filter: url(blur.svg#blur);
+  filter: url("blur.svg#blur");
   /* FireFox, Chrome, Opera */
   -webkit-filter: blur(3px);
   /* Chrome, Opera */
@@ -318,7 +390,8 @@ body {
   margin-right: 20px;
   max-width: 1024px;
   position: relative;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  clear: both; }
 
 .contain-area {
   margin: 0 auto; }

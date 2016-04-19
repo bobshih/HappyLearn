@@ -20,7 +20,7 @@ $(document).ready(
                     document.location.href = "profile.html";
                 },
                 error: function(xhr, status, message) {
-                    var errorM = "fail to register because: " + message;
+                    var errorM = "fail to login because: " + message;
                     alert(errorM);
                 },
                 async: false
