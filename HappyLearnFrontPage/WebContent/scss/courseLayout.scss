@@ -10,10 +10,6 @@ $width-xss:210px;
 .container>.row{
   border:1px solid black;
 }
-.courseZoneTitle{
-  margin: 0 auto;
-  text-align: center;
-}
 .courseFrame{
   background-color: #FAFFFE;
   margin: 0 auto;
@@ -23,6 +19,7 @@ $width-xss:210px;
 
   &:hover{
       box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.6),2px 2px 3px rgba(20%,20%,40%,0.4),-1px 1px 1px rgba(20%,20%,40%,0.6),-2px 2px 3px rgba(20%,20%,40%,0.4);
+        cursor: pointer;
   }
 }
 
@@ -56,6 +53,10 @@ $width-xss:210px;
 }
 
 @media screen and (min-width: 480px) {
+  .courseZoneTitle{
+    margin: 0 auto;
+    text-align: center;
+  }
   .profile{
     float: none;
     width:90px;

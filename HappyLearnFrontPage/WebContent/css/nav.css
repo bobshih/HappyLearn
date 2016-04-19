@@ -4,6 +4,10 @@ body {
   padding: 0;
   min-width: 480px; }
 
+.footer {
+  width: 100%;
+  height: 20px; }
+
 .navMenuIconBg:hover, .navLink:hover, .menuLink:hover {
   cursor: pointer; }
 
