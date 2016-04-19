@@ -36,21 +36,6 @@ body {
                 display: none;
             }
         }
-        @media screen and (min-width: $small) {
-            > h1 {
-                background: red;
-            }
-        }
-        @media screen and (min-width: $medium) {
-            > h1 {
-                background: yellow;
-            }
-        }
-        @media screen and (min-width: $large) {
-            > h1 {
-                background: green;
-            }
-        }
     }
 }
 // setting table css
