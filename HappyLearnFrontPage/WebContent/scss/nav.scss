@@ -5,9 +5,13 @@ $LG: 1024px;
 $SM: 768px;
 $XS: 480px;
 body {
+  height: 100%;
   background-color: $bodybackground;
   margin: 0;
   padding: 0;
+}
+html{
+  height: 100%;
 }
 .footer{
   width: 100%;
