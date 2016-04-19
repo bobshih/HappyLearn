@@ -190,7 +190,7 @@
   width: 200px; }
 
 .courseDiv {
-  display: block;
+  height: auto;
   float: right; }
 
 .filterDrop {
