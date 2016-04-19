@@ -15,6 +15,17 @@ body {
       .content > h1 {
         background: yellow; } }
 
+.wrapper {
+  position: relative;
+  text-align: center;
+  margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    .wrapper .line2 {
+      display: none; } }
+  @media screen and (min-width: 481px) {
+    .wrapper .line1 {
+      display: none; } }
+
 .title {
   text-align: center;
   width: 7.5em; }
@@ -35,8 +46,29 @@ Table {
   height: 10px; }
 
 .line {
-  height: 0.05em;
+  margin: 0 auto;
+  position: absolute;
+  height: 2px;
+  width: 346px;
   background-color: black; }
+
+.line1 {
+  top: 10%; }
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    .line1 {
+      left: 14%; } }
+  @media screen and (min-width: 768px) {
+    .line1 {
+      left: 27.53%; } }
+
+.line2 {
+  top: 18%; }
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    .line2 {
+      left: 14%; } }
+  @media screen and (min-width: 768px) {
+    .line2 {
+      left: 27.53%; } }
 
 .FieldName,
 .TableForm {
@@ -52,12 +84,8 @@ Table {
 .tab {
   width: 2em; }
 
-@media screen and (max-width: 480px) {
-  .TableForm .line2 {
-    display: none; } }
-@media screen and (min-width: 481px) {
-  .TableForm .line1 {
-    display: none; } }
+.TableForm {
+  padding: 0 2em; }
 
 input,
 textarea {

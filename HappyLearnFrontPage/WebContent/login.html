@@ -7,8 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/registerAndlogin.css">
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 
@@ -39,49 +38,60 @@
 
     <!-- 輸入註冊資訊 -->
     <div class="content">
-        <table class="TableForm">
-            <tr class="title">
-                <td colspan="3">
-                    <h1>登入</h1>
-                </td>
-            </tr>
-            <tr class="line1"><td colspan="3" class="line"></td></tr>
-            <tr class="space"></tr>
-            <tr class="title">
-                <td colspan="3">
-                    <h3>輸入帳號與密碼！</h3>
-                </td>
-            </tr>
-            <tr class="line2"><td colspan="3" class="line"></td></tr>
-            <tr class="space"></tr>
-            <tr>
-                <td class="FieldName">
-                    E-mail
-                </td>
-                <td class="tab"></td>
-                <td>
-                    <input type="text" name="email" autofocus required value="">
-                </td>
-            </tr>
-            <tr class="space"></tr>
-            <tr>
-                <td class="FieldName">
-                    Password
-                </td>
-                <td class="tab"></td>
-                <td>
-                    <input type="password" name="password" required value="">
-                </td>
-            </tr>
-            <tr class="space"></tr>
-            <tr>
-                <td colspan="3" style="text-align:center">
-                    <input type="button" id="register" value="登入">
-                </td>
-            </tr>
-            <tr class="space"></tr>
-        </table>
+        <div class="wrapper">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <table class="TableForm">
+                <tr class="title">
+                    <td colspan="3">
+                        <h1>登入</h1>
+                    </td>
+                </tr>
+                <tr class="space"></tr>
+                <tr class="title">
+                    <td colspan="3">
+                        <h3>請輸入帳號與密碼</h3>
+                    </td>
+                </tr>
+                <tr class="space"></tr>
+                <tr>
+                    <td class="FieldName">
+                        Account
+                    </td>
+                    <td class="tab"></td>
+                    <td>
+                        <input type="text" name="email" autofocus required value="">
+                    </td>
+                </tr><tr>
+                    <td class="FieldName"></td>
+                    <td class="tab"></td>
+                    <td class="hint" name="passhint">
+                        use your email address as your account
+                    </td>
+                </tr>
+                <tr>
+                    <td class="FieldName">
+                        Password
+                    </td>
+                    <td class="tab"></td>
+                    <td>
+                        <input type="password" name="password" required value="">
+                    </td>
+                </tr>
+                <tr class="space"></tr>
+                <tr>
+                    <td colspan="3" style="text-align:center">
+                        <input type="button" id="register" value="登入">
+                    </td>
+                </tr>
+                <tr class="space"></tr>
+            </table>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/menuSlidebar.js"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>

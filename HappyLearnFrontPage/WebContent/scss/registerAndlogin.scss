@@ -21,6 +21,23 @@ body {
         }
     }
 }
+// wrapper
+.wrapper {
+    // width: 11.5em;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (max-width: $small) {
+        .line2 {
+            display: none;
+        }
+    }
+    @media screen and (min-width: $small+1) {
+        .line1 {
+            display: none;
+        }
+    }
+}
 // setting title
 .title {
     text-align: center;
@@ -48,8 +65,29 @@ Table {
     height: 10px;
 }
 .line {
-    height: 0.05em;
+    margin: 0 auto;
+    position: absolute;
+    height: 2px;
+    width: 346px;
     background-color: black;
+}
+.line1 {
+    top: 10%;
+    @media screen and (min-width: $small), (max-width: $small) {
+        left: 14%;
+    }
+    @media screen and (min-width: $medium) {
+        left:27.53%;
+    }
+}
+.line2 {
+    top: 18%;
+    @media screen and (min-width: $small), (max-width: $small) {
+        left: 14%;
+    }
+    @media screen and (min-width: $medium) {
+        left:27.53%;
+    }
 }
 .FieldName,
 .TableForm {
@@ -67,16 +105,7 @@ Table {
 }
 // setting the desperate line
 .TableForm {
-    @media screen and (max-width: $small){
-        .line2 {
-            display: none;
-        }
-    }
-    @media screen and (min-width: $small+1) {
-        .line1 {
-            display: none;
-        }
-    }
+    padding: 0 2em;
 }
 // setting the input area's width
 input,
