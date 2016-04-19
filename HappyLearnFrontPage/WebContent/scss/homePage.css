@@ -308,18 +308,22 @@ a {
 .filterBar {
   border-radius: 5px;
   display: block;
-  background-color: #FAFFFE;
+  background-color: #E250F2;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 30px;
   height: 80%;
   width: 200px; }
-  .filterBar:hover {
-    box-shadow: 1px 1px 1px rgba(51, 51, 102, 0.6), 2px 2px 3px rgba(51, 51, 102, 0.4), -1px 1px 1px rgba(51, 51, 102, 0.6), -2px 2px 3px rgba(51, 51, 102, 0.4), -2px -2px 3px rgba(51, 51, 102, 0.4);
-    cursor: pointer; }
 
 .courseDiv {
+  display: block;
   float: right; }
 
+@media screen and (max-width: 1024px) {
+  .hide-sm {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .hide-xs {
+    display: none; } }
 @media screen and (min-width: 480px) {
   .filterBar {
     position: fixed;
@@ -373,7 +377,8 @@ a {
     height: 250px;
     width: 220px; } }
 body {
-  min-width: 300px; }
+  min-width: 300px;
+  margin: 0 auto; }
 
 a {
   text-decoration: none; }
@@ -393,15 +398,20 @@ a {
   /* IE6~IE9 */ }
 
 .container {
-  margin-left: 20px;
-  margin-right: 20px;
   max-width: 1024px;
   position: relative;
   box-sizing: border-box;
+  height: auto !important;
   clear: both; }
 
 .contain-area {
-  margin: 0 auto; }
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto !important;
+  min-height: 400px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px rgba(51, 51, 102, 0.6), 2px 2px 3px rgba(51, 51, 102, 0.4), -1px 1px 1px rgba(51, 51, 102, 0.6); }
 
 .mask {
   position: absolute;
