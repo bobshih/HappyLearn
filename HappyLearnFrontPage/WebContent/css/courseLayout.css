@@ -184,11 +184,14 @@
   background-color: #FAFFFE;
   margin: 0 auto;
   margin-top: 5px;
-  height: 100%;
-  width: 220px; }
+  height: 80%;
+  width: 200px; }
   .filterBar:hover {
     box-shadow: 1px 1px 1px rgba(51, 51, 102, 0.6), 2px 2px 3px rgba(51, 51, 102, 0.4), -1px 1px 1px rgba(51, 51, 102, 0.6), -2px 2px 3px rgba(51, 51, 102, 0.4), -2px -2px 3px rgba(51, 51, 102, 0.4);
     cursor: pointer; }
+
+.courseDiv {
+  float: right; }
 
 @media screen and (min-width: 480px) {
   .filterBar {

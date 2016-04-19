@@ -61,16 +61,17 @@ $width-xss:210px;
   background-color: #FAFFFE;
   margin: 0 auto;
   margin-top: 5px;
-  height: 100%;
-  width: $width-sm;
-
+  height: 80%;
+  width: 200px;
   &:hover{
       box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.6),2px 2px 3px rgba(20%,20%,40%,0.4),-1px 1px 1px rgba(20%,20%,40%,0.6),-2px 2px 3px rgba(20%,20%,40%,0.4),-2px -2px 3px rgba(20%,20%,40%,0.4);;
         cursor: pointer;
   }
 }
 
-
+.courseDiv{
+  float:right;
+}
 @media screen and (min-width: 480px) {
   .filterBar{
     position: fixed;
