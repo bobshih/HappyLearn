@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>我的主頁</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>template</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '488383028011745',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
+    <!-- 頂端的導覽列，包含icon、登入、註冊...等選項 -->
+    <div class="topNavBg">
+        <div class="topNav">
+            <div class="icon">
+                <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">
+                <span>Happy Laern</span>
+            </div>
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-  <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true" style="height:30px;width:30px">
-</div>
+            <span class="navMenuIconBg hideLG hideSM">
+        <span class="navMenuIcon "></span>
+            </span>
 
-  <form>
-    <input type='file' class="upl">
-    <div>
-        <img class="preview" style="max-width: 150px; max-height: 150px;">
-        <div class="size"></div>
+            <div class="navLink  hideXS">登入</div>
+            <div class="navLink  hideXS">註冊</div>
+        </div>
+
+        <div class="navMenuSlidebar hideLG hideSM">
+            <div href="" class="menuLink">登入</div>
+            <div href="" class="menuLink">註冊</div>
+
+        </div>
+        <!-- 選單，LG隱藏 -->
     </div>
-  </form>
 
-
-
-  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <script src="js/imgUpload.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/menuSlidebar.js"></script>
 </body>
 </html>
