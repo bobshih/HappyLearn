@@ -18,8 +18,8 @@ body {
 .title {
   text-align: center;
   width: 7.5em; }
-  .title > td > h1,
-  .title > td > h3 {
+  .title > td > h3,
+  .title > td > h1 {
     margin: 0 auto;
     border-radius: 10px; }
   @media screen and (max-width: 480px) {
@@ -55,7 +55,7 @@ Table {
 @media screen and (max-width: 480px) {
   .TableForm .line2 {
     display: none; } }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .TableForm .line1 {
     display: none; } }
 
@@ -63,4 +63,4 @@ input,
 textarea {
   width: 15em; }
 
-/*# sourceMappingURL=register.css.map */
+/*# sourceMappingURL=registerAndlogin.css.map */

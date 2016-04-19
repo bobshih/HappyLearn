@@ -26,8 +26,8 @@ body {
     text-align: center;
     width: 7.5em;
     > td {
-         > h1,
-        > h3 {
+         > h3,
+        > h1 {
             margin: 0 auto;
             border-radius: 10px;
         }
@@ -67,12 +67,12 @@ Table {
 }
 // setting the desperate line
 .TableForm {
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $small){
         .line2 {
             display: none;
         }
     }
-    @media screen and (min-width: $small) {
+    @media screen and (min-width: $small+1) {
         .line1 {
             display: none;
         }
