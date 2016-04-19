@@ -1,0 +1,66 @@
+body {
+  min-height: 500px; }
+
+.content {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px; }
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    .content {
+      width: 480px; } }
+  @media screen and (min-width: 768px) {
+    .content {
+      width: 768px; }
+      .content > h1 {
+        background: yellow; } }
+
+.title {
+  text-align: center;
+  width: 7.5em; }
+  .title > td > h1,
+  .title > td > h3 {
+    margin: 0 auto;
+    border-radius: 10px; }
+  @media screen and (max-width: 480px) {
+    .title > td > h3 {
+      display: none; } }
+
+Table {
+  background-color: #E2ECCC;
+  border-radius: 10px;
+  border: 2px solid #344065; }
+
+.space {
+  height: 10px; }
+
+.line {
+  height: 0.05em;
+  background-color: black; }
+
+.FieldName,
+.TableForm {
+  text-align: right;
+  margin: 0 auto;
+  width: 7.5em; }
+
+.hint {
+  text-align: left;
+  color: gray;
+  font-size: 0.8em; }
+
+.tab {
+  width: 2em; }
+
+@media screen and (max-width: 480px) {
+  .TableForm .line2 {
+    display: none; } }
+@media screen and (min-width: 480px) {
+  .TableForm .line1 {
+    display: none; } }
+
+input,
+textarea {
+  width: 15em; }
+
+/*# sourceMappingURL=register.css.map */

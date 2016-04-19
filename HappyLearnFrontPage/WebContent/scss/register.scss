@@ -1,0 +1,85 @@
+$large: 1024px;
+$medium: 768px;
+$small: 480px;
+$tablebackground: #E2ECCC;
+$tableborder: #344065;
+body {
+    min-height: 500px;
+}
+.content {
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    @media screen and (min-width: $small), (max-width: $small) {
+        width: 480px;
+    }
+    @media screen and (min-width: $medium) {
+        width: 768px;
+        > h1 {
+            background: yellow;
+        }
+    }
+}
+// setting title
+.title {
+    text-align: center;
+    width: 7.5em;
+    > td {
+         > h1,
+        > h3 {
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: $small) {
+            > h3 {
+                display: none;
+            }
+        }
+    }
+}
+// setting table css
+Table {
+    background-color: $tablebackground;
+    border-radius: 10px;
+    border: 2px solid $tableborder;
+}
+.space {
+    height: 10px;
+}
+.line {
+    height: 0.05em;
+    background-color: black;
+}
+.FieldName,
+.TableForm {
+    text-align: right;
+    margin: 0 auto;
+    width: 7.5em;
+}
+.hint {
+    text-align: left;
+    color: gray;
+    font-size: 0.8em;
+}
+.tab {
+    width: 2em;
+}
+// setting the desperate line
+.TableForm {
+    @media screen and (max-width: $small) {
+        .line2 {
+            display: none;
+        }
+    }
+    @media screen and (min-width: $small) {
+        .line1 {
+            display: none;
+        }
+    }
+}
+// setting the input area's width
+input,
+textarea {
+    width: 15em;
+}

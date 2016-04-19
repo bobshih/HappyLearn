@@ -52,25 +52,31 @@ body {
 
 .navLink {
   margin-right: 5px;
-  height: 40px;
+  margin-top: 5px;
+  height: 30px;
   position: relative;
   float: right;
   color: black;
-  padding: 2px;
-  line-height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 30px;
   box-sizing: border-box;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.5em; }
   .navLink:hover {
     background-color: #e5ecec; }
 
 .navMenuSlidebar {
+  display: none;
   position: fixed;
   top: 50px;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: yellow; }
+  background-color: yellow;
+  z-index: 999; }
 
 .menuLink {
   text-align: center;
@@ -86,10 +92,10 @@ body {
 @media screen and (min-width: 480px) {
   .hideSM {
     display: none; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .topNav {
     height: 50px;
-    width: 70%; }
+    width: 1024px; }
 
   .hideLG {
     display: none; } }

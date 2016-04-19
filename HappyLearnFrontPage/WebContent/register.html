@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/register.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- 頂端的導覽列，包含icon、登入、註冊...等選項 -->
+    <div class="topNavBg">
+        <div class="topNav">
+            <div class="icon">
+                <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">
+                <span>Happy Laern</span>
+            </div>
+
+            <span class="navMenuIconBg hideLG hideSM">
+        <span class="navMenuIcon "></span>
+            </span>
+
+            <div class="navLink  hideXS">登入</div>
+            <div class="navLink  hideXS">註冊</div>
+        </div>
+
+        <div class="navMenuSlidebar hideLG hideSM">
+            <div href="" class="menuLink">登入</div>
+            <div href="" class="menuLink">註冊</div>
+
+        </div>
+        <!-- 選單，LG隱藏 -->
+    </div>
+
+    <!-- 輸入註冊資訊 -->
+    <div class="content">
+        <table class="TableForm">
+            <tr class="title">
+                <td colspan="3">
+                    <h1>註冊</h1>
+                </td>
+            </tr>
+            <tr class="line1"><td colspan="3" class="line"></td></tr>
+            <tr class="space"></tr>
+            <tr class="title">
+                <td colspan="3">
+                    <h3>請輸入以下的資訊</h3>
+                </td>
+            </tr>
+            <tr class="line2"><td colspan="3" class="line"></td></tr>
+            <tr class="space"></tr>
+            <tr>
+                <td class="FieldName">
+                    E-mail
+                </td>
+                <td class="tab"></td>
+                <td>
+                    <input type="text" name="email" autofocus required value="">
+                </td>
+            </tr>
+            <tr class="space"></tr>
+            <tr>
+                <td class="FieldName">
+                    Password
+                </td>
+                <td class="tab"></td>
+                <td>
+                    <input type="password" name="password" required value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="FieldName"></td>
+                <td class="tab"></td>
+                <td class="hint" name="passhint">
+                    use english alphabets and nunbers only, and at least five characters
+                </td>
+            </tr>
+            <tr class="space"></tr>
+            <tr>
+                <td class="FieldName">
+                    Confirm Password
+                </td>
+                <td class="tab"></td>
+                <td>
+                    <input type="password" name="confirm" required value="">
+                </td>
+            </tr>
+            <tr class="space"></tr>
+            <tr>
+                <td class="FieldName">
+                    Name
+                </td>
+                <td class="tab"></td>
+                <td>
+                    <input type="text" name="nickname" required value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="FieldName"></td>
+                <td class="tab"></td>
+                <td class="hint" name="passhint">
+                    pls enter your name in chinese or english, this value will be presented in public
+                </td>
+            </tr>
+            <tr class="space"></tr>
+            <tr>
+                <td class="FieldName">
+                    Skills
+                </td>
+                <td class="tab"></td>
+                <td>
+                    <textarea name="skill" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr class="space"></tr>
+            <tr>
+                <td colspan="3" style="text-align:center">
+                    <input type="button" id="register" value="註冊">
+                </td>
+            </tr>
+            <tr class="space"></tr>
+        </table>
+    </div>
+</body>
+
+</html>

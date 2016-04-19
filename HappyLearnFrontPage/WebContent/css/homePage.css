@@ -1,402 +1,77 @@
-body {
-  margin: 0;
-  padding: 0; }
-
-.navMenuIconBg:hover, .navLink:hover, .menuLink:hover, .joinUsBtn:hover {
-  cursor: pointer; }
-
-.topNavBg {
-  position: relative;
-  height: 50px;
-  padding: 5px;
-  background-color: #f4f7f7;
-  box-sizing: border-box;
-  margin-left: 3px;
-  margin-right: 3px;
-  box-shadow: 2px 0 2px rgba(51, 51, 102, 0.6), 4px 0 6px rgba(51, 51, 102, 0.4), 6px 0 12px rgba(51, 51, 102, 0.4); }
-
-.topNav {
-  display: block;
-  margin: 0 auto; }
-
-.navMenuIconBg {
-  height: 40px;
-  width: 40px;
-  background-color: #f4f7f7;
-  display: block;
-  position: relative;
-  float: right; }
-  .navMenuIconBg:hover {
-    background-color: #e5ecec; }
-    .navMenuIconBg:hover > .navMenuIcon {
-      background: white;
-      box-shadow: 0 12px white, 0 24px white; }
-
-.navMenuIcon {
-  content: '';
-  margin-left: 5px;
-  height: 6px;
-  width: 30px;
-  background: #e3dede;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: 0;
-  box-shadow: 0 12px #e3dede, 0 24px #e3dede;
-  -webkit-box-shadow: 0 12px #e3dede, 0 24px #e3dede;
-  -moz-box-shadow: 0 12px #e3dede, 0 24px #e3dede; }
-
-.hlIcon {
-  widows: 40px;
-  height: 40px; }
-
-.navLink {
-  margin-right: 5px;
-  margin-top: 5px;
-  height: 30px;
-  position: relative;
-  float: right;
-  color: black;
-  padding-left: 5px;
-  padding-right: 5px;
-  line-height: 30px;
-  box-sizing: border-box;
-  text-align: center;
-  border: 1px solid black;
-  font-size: 1.5em; }
-  .navLink:hover {
-    background-color: #e5ecec; }
-
-.navMenuSlidebar {
-  display: none;
-  position: fixed;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  background-color: yellow;
-  z-index: 999; }
-
-.menuLink {
-  text-align: center;
-  line-height: 40px;
-  width: 100%;
-  height: 40px; }
-  .menuLink:hover {
-    background-color: #e5e600; }
-
-@media screen and (min-width: 1024px) {
-  .topNav {
-    height: 50px;
-    width: 1024px; }
-
-  .hideLG {
-    display: none; } }
-@media screen and (min-width: 768px) {
-  .hideSM {
-    display: none; } }
-@media screen and (min-width: 480px) {
-  .hideXS {
-    display: none; } }
-/* Grid */
-.col {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
-
-@media screen and (min-width: 480px) {
-  .col-xs-11 {
-    width: 91.662%; }
-
-  .col-xs-10 {
-    width: 83.332%; }
-
-  .col-xs-9 {
-    width: 75%; }
-
-  .col-xs-8 {
-    width: 66.662%; }
-
-  .col-xs-7 {
-    width: 58.331%; }
-
-  .col-xs-6 {
-    width: 50%; }
-
-  .col-xs-5 {
-    width: 41.662%; }
-
-  .col-xs-4 {
-    width: 33.332%; }
-
-  .col-xs-3 {
-    width: 25%; }
-
-  .col-xs-2 {
-    width: 16.662%; }
-
-  .col-xs-1 {
-    width: 8.332%; } }
-@media screen and (min-width: 768px) {
-  .col-sm-11 {
-    width: 91.662%; }
-
-  .col-sm-10 {
-    width: 83.332%; }
-
-  .col-sm-9 {
-    width: 75%; }
-
-  .col-sm-8 {
-    width: 66.662%; }
-
-  .col-sm-7 {
-    width: 58.331%; }
-
-  .col-sm-6 {
-    width: 50%; }
-
-  .col-sm-5 {
-    width: 41.662%; }
-
-  .col-sm-4 {
-    width: 33.332%; }
-
-  .col-sm-3 {
-    width: 25%; }
-
-  .col-sm-2 {
-    width: 16.662%; }
-
-  .col-sm-1 {
-    width: 8.332%; } }
-@media screen and (min-width: 1024px) {
-  .col-md-11 {
-    width: 91.662%; }
-
-  .col-md-10 {
-    width: 83.332%; }
-
-  .col-md-9 {
-    width: 75%; }
-
-  .col-md-8 {
-    width: 66.662%; }
-
-  .col-md-7 {
-    width: 58.331%; }
-
-  .col-md-6 {
-    width: 50%; }
-
-  .col-md-5 {
-    width: 41.662%; }
-
-  .col-md-4 {
-    width: 33.332%; }
-
-  .col-md-3 {
-    width: 25%; }
-
-  .col-md-2 {
-    width: 16.662%; }
-
-  .col-md-1 {
-    width: 8.332%; } }
-@media screen and (min-width: 1280px) {
-  .col-lg-11 {
-    width: 91.662%; }
-
-  .col-lg-10 {
-    width: 83.332%; }
-
-  .col-lg-9 {
-    width: 75%; }
-
-  .col-lg-8 {
-    width: 66.662%; }
-
-  .col-lg-7 {
-    width: 58.331%; }
-
-  .col-lg-6 {
-    width: 50%; }
-
-  .col-lg-5 {
-    width: 41.662%; }
-
-  .col-lg-4 {
-    width: 33.332%; }
-
-  .col-lg-3 {
-    width: 25%; }
-
-  .col-lg-2 {
-    width: 16.662%; }
-
-  .col-lg-1 {
-    width: 8.332%; } }
-.container > .row {
-  border: 1px solid black; }
-
-.courseFrame {
-  background-color: #fff3f5;
-  margin: 0 auto;
-  margin-top: 5px;
-  height: 70px;
-  width: 100%;
-  border: 1px solid black; }
-
-.profile {
-  float: left;
-  width: 70px;
-  height: 70px;
-  background-color: pink; }
-
-.courseInfo {
-  line-height: 30px;
-  padding-left: 5px;
-  padding-top: 5px;
-  float: left;
-  text-overflow: ellipsis;
-  height: 70px;
-  font-size: 4vmin; }
-
-@media screen and (min-width: 480px) {
-  .profile {
-    float: none;
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    margin-top: 20px; }
-
-  .courseFrame {
-    margin-top: 30px;
-    height: 200px;
-    width: 90%; }
-
-  .courseInfo {
-    max-height: 75px;
-    line-height: normal;
-    width: auto;
-    margin-top: 20px;
-    font-size: 1em; } }
-@media screen and (min-width: 768px) {
-  .profile {
-    width: 100px;
-    height: 100px; }
-
-  .courseFrame {
-    margin-top: 30px;
-    height: 250px;
-    width: 220px; } }
-@media screen and (min-width: 1024px) {
-  .courseFrame {
-    margin-top: 30px;
-    height: 250px;
-    width: 220px; } }
-body {
-  min-width: 300px; }
-
-.joinUsImg {
-  margin-top: 30px;
-  display: block;
-  max-width: 100%;
-  filter: url(blur.svg#blur);
-  /* FireFox, Chrome, Opera */
-  -webkit-filter: blur(3px);
-  /* Chrome, Opera */
-  -moz-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=false);
-  /* IE6~IE9 */ }
-
-.container {
-  margin-left: 20px;
-  margin-right: 20px;
-  max-width: 1024px;
-  position: relative;
-  box-sizing: border-box; }
-
-.contain-area {
-  margin: 0 auto; }
-
-.mask {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 80%;
-  height: 60%;
-  background-color: rgba(0, 0, 0, 0.4); }
-
-.joinUsBtn {
-  margin: 0 auto;
-  margin-top: 15px;
-  height: 25px;
-  width: 100px;
-  text-align: center;
-  line-height: 25px;
-  font-size: 1em;
-  color: white;
-  border: 2px solid black; }
-  .joinUsBtn:hover {
-    background-color: rgba(255, 255, 255, 0.5); }
-
-.slogan {
-  color: white;
-  display: block;
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
-  font-size: 1.2em; }
-
-@media screen and (min-width: 480px) {
-  .joinUsBtn {
-    height: 30px;
-    line-height: 30px;
-    width: 100px;
-    margin-top: 5%;
-    font-size: 1.5em; }
-
-  .slogan {
-    font-size: 2em;
-    margin-top: 10%; } }
-@media screen and (min-width: 768px) {
-  .joinUsBtn {
-    margin-top: 5%;
-    font-size: 1.5em;
-    height: 50px;
-    line-height: 50px;
-    width: 150px; }
-
-  .mask {
-    position: absolute; }
-
-  .slogan {
-    font-size: 3em;
-    margin-top: 10%; } }
-@media screen and (min-width: 1024px) {
-  .contain-area {
-    width: 1024px; }
-
-  .joinUsBtn {
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 50px;
-    width: 150px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 2em;
-    color: white;
-    border: 2px solid black; }
-
-  .slogan {
-    font-size: 4em;
-    margin-top: 50px; } }
-
-/*# sourceMappingURL=homePage.css.map */
+/*
+Error: Invalid CSS after "...207a0aa939678d6": expected "{", was "}"
+        on line 52 of C:/Users/阿文/Desktop/HappyLearn/HappyLearnFrontPage/WebContent/scss/nav.scss
+        from line 1 of C:\Users\阿文\Desktop\HappyLearn\HappyLearnFrontPage\WebContent\scss\homePage.scss
+
+47:     height: 50px;
+48:     padding: 5px;
+49:     background-color: $navBgc;
+50:     box-sizing: border-box;
+51: >>>>>>> 83a68867a7e67f7db22092f83207a0aa939678d6
+52: }
+53: // [END] topNavBg
+54: // topNav
+55: .topNav {
+56:     display: block;
+57:     margin: 0 auto;
+
+Backtrace:
+C:/Users/阿文/Desktop/HappyLearn/HappyLearnFrontPage/WebContent/scss/nav.scss:52
+C:\Users\阿文\Desktop\HappyLearn\HappyLearnFrontPage\WebContent\scss\homePage.scss:1
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:299:in `to_tree'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+D:/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+D:/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+D:/Koala/bin/sass:18:in `load'
+D:/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...207a0aa939678d6\": expected \"{\", was \"}\"\A         on line 52 of C:/Users/阿文/Desktop/HappyLearn/HappyLearnFrontPage/WebContent/scss/nav.scss\A         from line 1 of C:\Users\阿文\Desktop\HappyLearn\HappyLearnFrontPage\WebContent\scss\homePage.scss\A \A 47:     height: 50px;\A 48:     padding: 5px;\A 49:     background-color: $navBgc;\A 50:     box-sizing: border-box;\A 51: >>>>>>> 83a68867a7e67f7db22092f83207a0aa939678d6\A 52: }\A 53: // [END] topNavBg\A 54: // topNav\A 55: .topNav {\A 56:     display: block;\A 57:     margin: 0 auto;"; }
