@@ -1,7 +1,6 @@
 $(document).ready(
     function() {
         var id = location.search.split('id=')[1];
-        alert(id);
         var selfInfo = function(){
             var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Account?id=" + id;
             var posting = $.ajax({
@@ -9,8 +8,8 @@ $(document).ready(
                 url: url,
                 success: function(data) {
                     if (data === "[]") {
-                        $('#login').attr("disabled", false);
-                        return;
+                        alert("account id is not vaild, go back to login page");
+                        location.href = "login.html";
                     }
                     var json = jQuery.parseJSON(data);
                     console.log(json);
@@ -24,7 +23,7 @@ $(document).ready(
                     var errorM = "fail to login because: " + message;
                     alert(errorM);
                 },
-                async: false
+                async: true
             });
         }
         selfInfo();
