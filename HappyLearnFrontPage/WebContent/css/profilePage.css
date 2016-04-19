@@ -1,3 +1,6 @@
+body {
+  z-index: 1; }
+
 .content {
   margin: 0 auto;
   height: 100%;
@@ -68,5 +71,19 @@ table {
     text-align: left; }
   table .attr {
     text-align: right; }
+
+.addMemberWindow {
+  position: fixed;
+  margin: 0 auto;
+  height: 300px;
+  width: 700px;
+  background-color: #505050;
+  z-index: 999;
+  visibility: hidden;
+  border-radius: 15px; }
+
+.wrapper {
+  margin: auto;
+  width: 700px; }
 
 /*# sourceMappingURL=profilePage.css.map */

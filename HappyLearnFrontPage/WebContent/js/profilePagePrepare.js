@@ -28,5 +28,11 @@ $(document).ready(
             });
         }
         selfInfo();
+
+        $("input[name='modifySkill']").click(
+            function(){
+                $('#wrapper').toggle();
+            }
+        );
     }
 );

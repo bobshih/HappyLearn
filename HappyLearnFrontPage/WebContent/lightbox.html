@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    var answerBox = $(this).attr('href');
+
+    //Fade in the Popup
+    $('.answer-popup').fadeIn(300);
+
+    //Set the center alignment padding + border see css style
+    var popMargTop = ($(answerBox).height() + 24) / 2;
+    var popMargLeft = ($(answerBox).width() + 24) / 2;
+
+    $(answerBox).css({
+        'margin-top': -popMargTop,
+        'margin-left': -popMargLeft
+    });
+
+    // Add the mask to body
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(300);
+
+    return false;
+
+    });
+
+
+    // When clicking on the mask layer the popup closed
+    $('#mask').live('click', function() {
+    $('#mask , .answer-popup').fadeOut(300, function() {
+        $('#mask').remove();
+
+    });
+    return false;
+    });
+    });
+
+    // load Answers when click questions via Ajax
+    // load Answer when clicking question
+    $(document).ready(function() {
+        var url;
+        $('.question a').click(function(ev) {
+            url = $(this).attr('href');
+            $('.answers').load('http://127.0.0.1:8000' + url, function(response) {});
+            return false;
+        });
+
+        $('body').on('click', '#submitanswerbutton', function(ev) {
+            //var pathname = window.location.pathname;
+            //$('.answer-popup').load(url+'add_answer/');
+            $('.answer-popup').html('<form><input type="text"></form>');
+        });
+        return false;
+    });
+</script>
+<style media="screen">
+    #submittextbutton {
+        float: right;
+        margin-top: 5px;
+        margin-right: 12px;
+    }
+
+    #mask {
+        display: none;
+        background: #000;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        z-index: 999;
+    }
+
+    .answer-popup {
+        display: none;
+        font-size: 14px;
+        background: #333;
+        padding: 10px;
+        width: 250px;
+        height: 300px;
+        border: 1px solid black;
+        float: left;
+        font-size: 1.2em;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 99999;
+        box-shadow: 0px 0px 20px #333333;
+        /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #333333;
+        /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #333333;
+        /* Safari, Chrome */
+        border-radius: 13px 13px 13px 13px;
+        -moz-border-radius: 13px;
+        /* Firefox */
+        -webkit-border-radius: 13px;
+        /* Safari, Chrome */
+    }
+
+    .answer-popup a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        background: #333;
+    }
+</style>
+
+<body>
+    <div id="submitanswerbutton">
+        <a href="#answer-box" class="login-window">
+            <div class="btn btn-primary">Ask a Question</a>
+        </div>
+
+    </div>
+    <div id="answer-box" class="answer-popup">
+    </div>
+</body>
+
+</html>
