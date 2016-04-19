@@ -183,12 +183,13 @@
 .filterBar {
   border-radius: 5px;
   display: block;
-  background-color: #E250F2;
+  background-color: #fffdfa;
   margin: 0 auto;
   margin-top: 30px;
   height: 80%;
   width: 200px;
-  float: left; }
+  float: left;
+  box-shadow: 2px 2px 4px rgba(51, 51, 102, 0.6), 4px 4px 6px rgba(51, 51, 102, 0.4), -2px 2px 4px rgba(51, 51, 102, 0.6); }
 
 .courseDiv {
   height: auto;
@@ -226,7 +227,7 @@
     margin: 20px auto 0; }
 
   .courseFrame {
-    border-top: 1px solid white;
+    border-top: 2px solid #B3FFDB;
     margin-top: 30px;
     height: 200px;
     width: 90%; }
