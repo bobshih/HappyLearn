@@ -1,17 +1,26 @@
 window.onload = function() {
     alert("It's loaded!");
-    var element = '<div class="col col-md-3 col-sm-4 col-xs-6">' + ' < div class = "courseFrame" > ' + ' < div class = "profile" > < img src = "" alt = "" class = "profileImg" > < /div>' + ' < div class = "courseInfo" > ' + ' < div class = "coursePartic" > participants: 2 / 3 < /div>' + ' < div class = "courseName" > course name: computer science1 < /div>' + ' < /div>' + ' < /div>' + ' < /div>';
-    alert(element);
-    // var loadClass = function() {
-    //     var addElement = function(json) {
-    //             // var element = '<div class="col col-md-3 col-sm-4 col-xs-6"> < div class = "courseFrame" >
-    //             //     < div class = "profile" > < img src = ""
-    //             // alt = ""
-    //             // class = "profileImg" > < /div> < div class = "courseInfo" >
-    //             //     < div class = "coursePartic" > participants: 2 / 3 < /div> < div class = "courseName" > course name: computer science1 < /div> < /div> < /div> < /div>';
-    //             // alert(element);
-    //         }
-    //         // var jsonArray;
+    var addElement = function(id, name, tid, desc, limit, now, cate) {
+        var element = `
+            <div class="col col-md-3 col-sm-4 col-xs-6">
+              <div class="courseFrame">
+                <div class="profile"><img src="`+"img/subject/"+cate+".jpg"+`" alt="`+cate+`" class="profileImg"></div>
+                <div class="courseInfo">
+                  <input type="hidden" name="classid" value="`+id+`">
+                  <input type="hidden" name="tid" value="`+tid+`">
+                  <div class="coursePartic">
+                    <nobr>
+                      participants:`+now+`/`+limit+`</nobr>
+                  </div>
+                  <div class="courseName">
+                    <nobr>course name:`+name+`</nobr>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+        alert(element);
+        return element;
+    }
     var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Class";
 
 
@@ -32,6 +41,8 @@ window.onload = function() {
                 var limit = json.LIMIT;
                 var now = json.NOW;
                 var cate = json.CATEGORY;
+                var tid = json.TEACHERID;
+                $("#content").append(addElement(id, name, tid, desc, limit, now, cate));
             }
         },
         error: function(xhr, status, message) {
