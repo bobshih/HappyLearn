@@ -1,12 +1,14 @@
-$navBgc: #f4f7f7;
+$navBgc: #7BA195;
 $navMenuIcon: (hover:white,normal:#e3dede);
+$bodybackground: #F0F5D3;
 $LG: 1024px;
 $SM: 768px;
 $XS: 480px;
 body {
+    background-color: $bodybackground;
     margin: 0;
     padding: 0;
-    min-width: 300px;
+    min-width: 480px;
 }
 // element
 %cursorPointer {

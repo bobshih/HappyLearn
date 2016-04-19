@@ -1,7 +1,8 @@
 body {
+  background-color: #F0F5D3;
   margin: 0;
   padding: 0;
-  min-width: 300px; }
+  min-width: 480px; }
 
 .navMenuIconBg:hover, .navLink:hover, .menuLink:hover {
   cursor: pointer; }
@@ -10,7 +11,7 @@ body {
   position: relative;
   height: 50px;
   padding: 5px;
-  background-color: #f4f7f7;
+  background-color: #7BA195;
   box-sizing: border-box; }
 
 .topNav {
@@ -20,12 +21,12 @@ body {
 .navMenuIconBg {
   height: 40px;
   width: 40px;
-  background-color: #f4f7f7;
+  background-color: #7BA195;
   display: block;
   position: relative;
   float: right; }
   .navMenuIconBg:hover {
-    background-color: #e5ecec; }
+    background-color: #6c9689; }
     .navMenuIconBg:hover > .navMenuIcon {
       background: white;
       box-shadow: 0 12px white, 0 24px white; }
@@ -71,7 +72,7 @@ body {
   border: 1px solid black;
   font-size: 1.5em; }
   .navLink:hover {
-    background-color: #e5ecec; }
+    background-color: #6c9689; }
 
 .navMenuSlidebar {
   display: none;

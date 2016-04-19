@@ -1,10 +1,11 @@
 $large: 1024px;
 $medium: 768px;
 $small: 480px;
-
-body{
+$tablebackground: #E2ECCC;
+$tableborder: #344065;
+body {
+    min-height: 500px;
 }
-
 .content {
     margin: 0 auto;
     height: 100%;
@@ -12,53 +13,88 @@ body{
     padding-top: 20px;
     @media screen and (min-width: $small), (max-width: $small) {
         width: 480px;
-        > h1 {
-            color: red;
-        }
     }
     @media screen and (min-width: $medium) {
         width: 768px;
         > h1 {
-            color: yellow;
-        }
-    }
-    @media screen and (min-width: $large) {
-        > h1 {
-            color: green;
+            background: yellow;
         }
     }
 }
-
+// setting title
+.title {
+    text-align: center;
+    width: 7.5em;
+    > td {
+         > h1,
+        > h3 {
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: $small) {
+            > h3 {
+                display: none;
+            }
+        }
+        @media screen and (min-width: $small) {
+            > h1 {
+                background: red;
+            }
+        }
+        @media screen and (min-width: $medium) {
+            > h1 {
+                background: yellow;
+            }
+        }
+        @media screen and (min-width: $large) {
+            > h1 {
+                background: green;
+            }
+        }
+    }
+}
+// setting table css
 Table {
+    background-color: $tablebackground;
+    border-radius: 10px;
+    border: 2px solid $tableborder;
+}
+.space {
+    height: 10px;
+}
+.line {
+    height: 0.05em;
+    background-color: black;
+}
+.FieldName,
+.TableForm {
     text-align: right;
-}
-input {
-    width: 15em;
-}
-.FieldName {
+    margin: 0 auto;
     width: 7.5em;
 }
-
+.hint {
+    text-align: left;
+    color: gray;
+    font-size: 0.8em;
+}
 .tab {
     width: 2em;
 }
-.InputElement{
-    text-align: left;
-    @media screen and (min-width: $small), (max-width: $small) {
-        font-size: 1.5em;
-        > h1 {
-            color: red;
+// setting the desperate line
+.TableForm {
+    @media screen and (max-width: $small) {
+        .line2 {
+            display: none;
         }
     }
-    @media screen and (min-width: $medium) {
-        width: 768px;
-        > h1 {
-            color: yellow;
+    @media screen and (min-width: $small) {
+        .line1 {
+            display: none;
         }
     }
-    @media screen and (min-width: $large) {
-        > h1 {
-            color: green;
-        }
-    }
+}
+// setting the input area's width
+input,
+textarea {
+    width: 15em;
 }
