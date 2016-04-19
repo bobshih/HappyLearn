@@ -61,4 +61,12 @@
     padding: 10px 20px 15px;
     color: #666; }
 
+table {
+  text-align: center;
+  margin: 0 auto; }
+  table .field {
+    text-align: left; }
+  table .attr {
+    text-align: right; }
+
 /*# sourceMappingURL=profilePage.css.map */

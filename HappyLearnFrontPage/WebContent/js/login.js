@@ -17,7 +17,7 @@ $(document).ready(
                         return;
                     }
                     var json = jQuery.parseJSON(data);
-                    document.location.href = "profile.html?id="+json.ID;
+                    document.location.href = "profilePage.html?id="+json.ID;
                 },
                 error: function(xhr, status, message) {
                     var errorM = "fail to login because: " + message;

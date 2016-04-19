@@ -73,3 +73,14 @@ $toggleBackground: #E2ECCC;
         color: #666;
     }
 }
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    .field {
+        text-align: left;
+    }
+    .attr {
+        text-align: right;
+    }
+}
