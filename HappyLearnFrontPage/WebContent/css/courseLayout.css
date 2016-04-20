@@ -157,6 +157,13 @@
   height: 70px;
   background-color: pink; }
 
+.popProfile {
+  margin: 0 auto;
+  float: none;
+  width: 70px;
+  height: 70px;
+  background-color: pink; }
+
 .profileImg {
   width: inherit; }
 
@@ -168,6 +175,28 @@
   text-overflow: ellipsis;
   height: 70px;
   font-size: 1em; }
+
+.popInfo {
+  padding-left: 5px;
+  padding-top: 5px;
+  width: auto;
+  text-overflow: ellipsis;
+  height: auto;
+  font-size: 1em; }
+  .popInfo > table {
+    text-align: center;
+    margin: 0 auto; }
+    .popInfo > table .field {
+      text-align: left; }
+      .popInfo > table .field #desc {
+        width: 100%;
+        direction: ltr;
+        display: block;
+        max-width: 100%;
+        resize: none;
+        border: none; }
+    .popInfo > table .attr {
+      text-align: right; }
 
 .courseName {
   width: auto;
@@ -190,6 +219,7 @@
   z-index: 99; }
 
 .courseForm {
+  border-radius: 10px;
   position: relative;
   z-index: 100;
   margin: 0 auto;
@@ -268,6 +298,10 @@
     height: 90px;
     margin: 20px auto 0; }
 
+  .popProfile {
+    width: 90px;
+    height: 90px; }
+
   .courseFrame {
     border-top: 2px solid #B3FFDB;
     margin-top: 30px;
@@ -279,11 +313,18 @@
     padding-top: 5px;
     height: 75px;
     line-height: normal;
-    width: auto;
-    margin-top: 20px;
-    font-size: 1em; } }
+    margin-top: 20px; }
+
+  .popInfo {
+    height: 75px;
+    line-height: normal;
+    margin-top: 20px; } }
 @media screen and (min-width: 768px) {
   .profile {
+    width: 100px;
+    height: 100px; }
+
+  .popProfile {
     width: 100px;
     height: 100px; }
 
@@ -293,6 +334,9 @@
     width: 220px; }
 
   .courseInfo {
+    height: 100px; }
+
+  .popInfo {
     height: 100px; }
 
   .courseName {
@@ -308,5 +352,10 @@
     margin-top: 30px;
     height: 250px;
     width: 220px; } }
+.pop {
+  padding: 2% 1%; }
+
+.popp {
+  color: black; }
 
 /*# sourceMappingURL=courseLayout.css.map */

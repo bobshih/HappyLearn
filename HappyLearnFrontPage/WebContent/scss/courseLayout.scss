@@ -8,189 +8,241 @@ $width-sm: 220px;
 $width-xs: 210px;
 $width-xss: 210px;
 .container > .row {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 .courseFrame {
-  display: block;
-  border-radius: 5px;
-  display: block;
-  background-color: #FAFFFE;
-  margin: 5px auto 0;
-  height: $height-xss;
-  width: 100%;
-  &:hover {
-    box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.6),2px 2px 3px rgba(20%,20%,40%,0.4),-1px 1px 1px rgba(20%,20%,40%,0.6),-2px 2px 3px rgba(20%,20%,40%,0.4),-2px -2px 3px rgba(20%,20%,40%,0.4);
-    cursor: pointer;
-  }
+    display: block;
+    border-radius: 5px;
+    display: block;
+    background-color: #FAFFFE;
+    margin: 5px auto 0;
+    height: $height-xss;
+    width: 100%;
+    &:hover {
+        box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.6),2px 2px 3px rgba(20%,20%,40%,0.4),-1px 1px 1px rgba(20%,20%,40%,0.6),-2px 2px 3px rgba(20%,20%,40%,0.4),-2px -2px 3px rgba(20%,20%,40%,0.4);
+        cursor: pointer;
+    }
 }
 .profile {
-  float: left;
-  width: 70px;
-  height: $height-xss;
-  background-color: pink;
+    float: left;
+    width: 70px;
+    height: $height-xss;
+    background-color: pink;
+}
+.popProfile {
+    margin: 0 auto;
+    float: none;
+    width: 70px;
+    height: $height-xss;
+    background-color: pink;
 }
 .profileImg {
-  width: inherit;
+    width: inherit;
 }
 .courseInfo {
-  line-height: 30px;
-  padding-left: 75px;
-  padding-top: 5px;
-  width: auto;
-  text-overflow: ellipsis;
-  height: $height-xss;
-  font-size: 1em;
+    line-height: 30px;
+    padding-left: 75px;
+    padding-top: 5px;
+    width: auto;
+    text-overflow: ellipsis;
+    height: $height-xss;
+    font-size: 1em;
 }
-.courseName {
-  width: auto;
-  height: $height-xss/2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.coursePartic {
-  overflow: hidden;
-  height: $height-xss/2;
-  text-overflow: ellipsis;
-  color: red;
-}
-.coursePop {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  position: fixed;
-  background-color: rgba(black,.3);
-  z-index: 99;
-}
-.courseForm {
-  position: relative;
-z-index: 100;
-  margin: 0 auto;
-  background-color: white;
-
-  @media screen and (max-width:480px) {
-    margin-top: 10%;
-    width: 80%;
-    height: 80%;
-  }
-  @media screen and (min-width:480px) {
-    margin-top: 10%;
-    width: 300px;
-    height: 400px;
-  }
-  @media screen and (min-width:768px) {
-    margin-top: 50px;
-    width: 400px;
-    height: 500px;
-  }
-}
-.coursePopClose{
-  border-radius: 20px;
-  line-height: 30px;
-  text-align: center;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: grey;
-  width:30px;
-  height:30px;
-  &:hover {
-  
-    cursor: pointer;
-  }
-}
-.filterBar {
-  border-radius: 5px;
-  display: block;
-  background-color: lighten(#FFF2E0,5);
-  margin: 30px auto 0;
-  height: 80%;
-  width: 200px;
-  float: left;
-  box-shadow: 2px 2px 4px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),-2px 2px 4px rgba(20%,20%,40%,0.6);
-}
-.courseDiv {
-  height: auto;
-  float: left;
-}
-.filterDrop {
-  width: 100%;
-  height: 30px;
-}
-.filterDiv {
-  width: 200px;
-  min-height: 800px;
-  height: 100%;
-  float: left;
-}
-@media screen and (max-width:1024px) {
-  .hide-sm {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hide-xs {
-    display: none;
-  }
-}
-@media screen and (min-width: 480px) {
-  .filterBar {
-    position: fixed;
-    float: none;
-  }
-  .courseZoneTitle {
-    margin: 0 auto;
-    text-align: center;
-  }
-  .profile {
-    float: none;
-    width: 90px;
-    height: 90px;
-    margin: 20px auto 0;
-  }
-  .courseFrame {
-    border-top: 2px solid #B3FFDB;
-    margin-top: 30px;
-    height: $height-xs;
-    width: 90%;
-  }
-  .courseInfo {
+.popInfo {
     padding-left: 5px;
     padding-top: 5px;
-    height: 75px;
-    line-height: normal;
     width: auto;
-    margin-top: 20px;
+    text-overflow: ellipsis;
+    height: auto;
     font-size: 1em;
-  }
+    > table {
+        text-align: center;
+        margin: 0 auto;
+        .field {
+            text-align: left;
+            #desc {
+                width: 100%;
+                direction: ltr;
+                display: block;
+                max-width: 100%;
+                resize: none;
+                border: none;
+            }
+        }
+        .attr {
+            text-align: right;
+        }
+    }
+}
+.courseName {
+    width: auto;
+    height: $height-xss/2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.coursePartic {
+    overflow: hidden;
+    height: $height-xss/2;
+    text-overflow: ellipsis;
+    color: red;
+}
+.coursePop {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background-color: rgba(black,.3);
+    z-index: 99;
+}
+.courseForm {
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    background-color: white;
+    @media screen and (max-width:480px) {
+        margin-top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    @media screen and (min-width:480px) {
+        margin-top: 10%;
+        width: 300px;
+        height: 400px;
+    }
+    @media screen and (min-width:768px) {
+        margin-top: 50px;
+        width: 400px;
+        height: 500px;
+    }
+}
+.coursePopClose {
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.filterBar {
+    border-radius: 5px;
+    display: block;
+    background-color: lighten(#FFF2E0,5);
+    margin: 30px auto 0;
+    height: 80%;
+    width: 200px;
+    float: left;
+    box-shadow: 2px 2px 4px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),-2px 2px 4px rgba(20%,20%,40%,0.6);
+}
+.courseDiv {
+    height: auto;
+    float: left;
+}
+.filterDrop {
+    width: 100%;
+    height: 30px;
+}
+.filterDiv {
+    width: 200px;
+    min-height: 800px;
+    height: 100%;
+    float: left;
+}
+@media screen and (max-width:1024px) {
+    .hide-sm {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hide-xs {
+        display: none;
+    }
+}
+@media screen and (min-width: 480px) {
+    .filterBar {
+        position: fixed;
+        float: none;
+    }
+    .courseZoneTitle {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .profile {
+        float: none;
+        width: 90px;
+        height: 90px;
+        margin: 20px auto 0;
+    }
+    .popProfile {
+        width: 90px;
+        height: 90px;
+    }
+    .courseFrame {
+        border-top: 2px solid #B3FFDB;
+        margin-top: 30px;
+        height: $height-xs;
+        width: 90%;
+    }
+    .courseInfo {
+        padding-left: 5px;
+        padding-top: 5px;
+        height: 75px;
+        line-height: normal;
+        margin-top: 20px;
+    }
+    .popInfo {
+        height: 75px;
+        line-height: normal;
+        margin-top: 20px;
+    }
 }
 @media screen and (min-width: 768px) {
-  .profile {
-    width: 100px;
-    height: 100px;
-  }
-  .courseFrame {
-    margin-top: 30px;
-    height: $height-sm;
-    width: $width-sm;
-  }
-  .courseInfo {
-    height: 100px;
-  }
-  .courseName {
-    height: 70px;
-  }
-  .coursePartic {
-    height: 25px;
-  }
+    .profile {
+        width: 100px;
+        height: 100px;
+    }
+    .popProfile {
+        width: 100px;
+        height: 100px;
+    }
+    .courseFrame {
+        margin-top: 30px;
+        height: $height-sm;
+        width: $width-sm;
+    }
+    .courseInfo {
+        height: 100px;
+    }
+    .popInfo {
+        height: 100px;
+    }
+    .courseName {
+        height: 70px;
+    }
+    .coursePartic {
+        height: 25px;
+    }
 }
 @media screen and (min-width: 1024px) {
-  .hide-lg-up {
-    display: none;
-  }
-  .profile {}
-  .courseFrame {
-    margin-top: 30px;
-    height: $height-md;
-    width: $width-md;
-  }
+    .hide-lg-up {
+        display: none;
+    }
+    .profile {}
+    .courseFrame {
+        margin-top: 30px;
+        height: $height-md;
+        width: $width-md;
+    }
+}
+.pop {
+    padding: 2% 1%;
+}
+.popp {
+    color: black;
 }
