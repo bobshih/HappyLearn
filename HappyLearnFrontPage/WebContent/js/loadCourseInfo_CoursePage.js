@@ -8,10 +8,10 @@ var addElement = function(id, name, tid, desc, limit, now, cate) {
                   <input type="hidden" name="tid" value="`+tid+`">
                     <div class="coursePartic">
                         <nobr>
-                            participants:`+now+`/`+limit+`</nobr>
+                            Participants: `+now+`/`+limit+`</nobr>
                     </div>
                     <div class="courseName">
-                        <nobr>course name:`+name+`</nobr>
+                        <nobr>Course Name: `+name+`</nobr>
                     </div>
                 </div>
             </div>

@@ -8,12 +8,17 @@ window.onload = function() {
                 <div class="courseInfo">
                   <input type="hidden" name="classid" value="`+id+`">
                   <input type="hidden" name="tid" value="`+tid+`">
+                  <input type="hidden" name="cate" value="`+cate+`">
+                  <input type="hidden" name="name" value="`+name+`">
+                  <input type="hidden" name="desc" value="`+desc+`">
+                  <input type="hidden" name="limit" value="`+limit+`">
+                  <input type="hidden" name="now" value="`+now+`">
                   <div class="coursePartic">
                     <nobr>
-                      participants:`+now+`/`+limit+`</nobr>
+                      Participants: `+now+`/`+limit+`</nobr>
                   </div>
                   <div class="courseName">
-                    <nobr>course name:`+name+`</nobr>
+                    <nobr>Course Name:`+name+`</nobr>
                   </div>
                 </div>
               </div>
@@ -43,6 +48,7 @@ window.onload = function() {
                 var tid = json.TEACHERID;
                 $("#content").append(addElement(id, name, tid, desc, limit, now, cate));
             }
+            coursePopSetup();
         },
         error: function(xhr, status, message) {
             var errorM = "fail to get class info because: " + message;
