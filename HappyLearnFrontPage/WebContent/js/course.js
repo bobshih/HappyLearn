@@ -3,7 +3,7 @@ $(document).ready(
             $("select[name='categoryDrop']").change(
                 function() {
                     var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/FilterClass?category=" + $(this).val();
-                    alert(url);
+                    // alert(url);
                     var posting = $.ajax({
                         dataType: "text",
                         url: url,

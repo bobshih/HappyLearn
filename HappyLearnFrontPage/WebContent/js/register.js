@@ -16,9 +16,9 @@ $(document).ready(
                     url: url,
                     data: inputdata,
                     success: function(fdata) {
-                        alert("in success");
+                        // alert("in success");
                         if (fdata['1']) {
-                            alert(1);
+                            // alert(1);
                             alert("this email has been used");
                             $("#register").attr("disabled", false);
                             flag = 0;
