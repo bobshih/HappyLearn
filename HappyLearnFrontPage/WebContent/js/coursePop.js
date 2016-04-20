@@ -82,7 +82,7 @@ var coursePopSetup = function() {
             <table>
                 <tr>
                     <td class="attr">
-                        Coures Name:
+                        課程名稱:
                     </td>
                     <td class="field">
                         ` + name + `
@@ -90,7 +90,7 @@ var coursePopSetup = function() {
                 </tr>
                 <tr>
                     <td class="attr">
-                        Teacher Name:
+                        講師:
                     </td>
                     <td class="field">
                         ` + tname.key + `
@@ -98,7 +98,7 @@ var coursePopSetup = function() {
                 </tr>
                 <tr>
                     <td class="attr">
-                        Subject :
+                        科目 :
                     </td>
                     <td class="field">
                         ` + cname.key + `
@@ -106,7 +106,7 @@ var coursePopSetup = function() {
                 </tr>
                 <tr>
                     <td class="attr">
-                        Limit :
+                        人數上限 :
                     </td>
                     <td class="field">
                         ` + limit + `
@@ -114,21 +114,22 @@ var coursePopSetup = function() {
                 </tr>
                 <tr>
                     <td class="attr">
-                        Participants :
+                        目前人數 :
                     </td>
                     <td class="field">
                         ` + now + `
                     </td>
                 </tr>
-                <tr>
+                <tr class="desc">
                     <td class="attr">
-                        Description :
+                        課程說明 :
                     </td>
                     <td class="field">
-                        <textarea id="desc" rows="0">` + desc + `</textarea>
+
                     </td>
                 </tr>
-            </table>`;
+            </table>
+            <textarea id="desc">` + desc + `</textarea>`;
     $('#popForm').append(element);
 
     $('.coursePopClose').click(function() {

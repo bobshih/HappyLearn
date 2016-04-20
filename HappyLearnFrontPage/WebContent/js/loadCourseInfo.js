@@ -15,10 +15,10 @@ window.onload = function() {
                   <input type="hidden" name="now" value="`+now+`">
                   <div class="coursePartic">
                     <nobr>
-                      Participants: `+now+`/`+limit+`</nobr>
+                      人數: `+now+`/`+limit+`</nobr>
                   </div>
                   <div class="courseName">
-                    <nobr>Course Name:`+name+`</nobr>
+                    <nobr>課程名稱:`+name+`</nobr>
                   </div>
                 </div>
               </div>
