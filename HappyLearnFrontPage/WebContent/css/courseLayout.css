@@ -367,17 +367,17 @@
   width: 100%;
   margin: 0 auto;
   font-size: 1.5em;
-  overflow: scroll;
   text-overflow: clip;
-  resize: none; }
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 .desc {
   border-top: 1px solid black; }
 
 #goToClass {
   display: block;
-  margin: 0 auto;
-  margin-top: 10px;
+  margin: 10px auto 0;
   box-sizing: border-box; }
 
 /*# sourceMappingURL=courseLayout.css.map */
