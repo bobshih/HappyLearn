@@ -1,6 +1,9 @@
+var userID = {key: 0};
 $(document).ready(
     function() {
         var id = location.search.split('id=')[1];
+        userID = id;
+        console.log(userID);
         if (!$.isNumeric(id)) {
             alert("請先登入");
             location.href = 'login.html';
