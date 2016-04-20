@@ -1,7 +1,7 @@
 var addElement = function(id, name, tid, desc, limit, now, cate) {
     var element = `
         <div class="col col-md-4 col-sm-4 col-xs-6">
-            <div class="courseFrame">
+            <div class="courseFrame" onclick="coursePopSetup()">
                 <div class="profile"><img src="`+"img/subject/"+cate+".jpg"+`" alt="`+cate+`" class="profileImg"></div>
                 <div class="courseInfo">
                 <input type="hidden" name="classid" value="`+id+`">
@@ -71,7 +71,7 @@ window.onload = function() {
                     var element = "<option value='"+id+"'>"+name+" - "+group+"</option>";
                     $("select[name='categoryDrop']").append(element);
                 }
-                coursePopSetup();
+                // coursePopSetup();
             },
             error: function(xhr, status, message) {
                 var errorM = "fail to get category info because: " + message;

@@ -516,6 +516,12 @@ a {
 .desc {
   border-top: 1px solid black; }
 
+#goToClass {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-sizing: border-box; }
+
 body {
   min-width: 300px;
   margin: 0 auto; }
