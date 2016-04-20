@@ -3,7 +3,7 @@ window.onload = function() {
     var addElement = function(id, name, tid, desc, limit, now, cate) {
         var element = `
             <div class="col col-md-3 col-sm-4 col-xs-6">
-              <div class="courseFrame" onclick=" coursePopToggle()">
+              <div class="courseFrame" onclick=" coursePopToggle(`+id+`)">
                 <div class="profile"><img src="`+"img/subject/"+cate+".jpg"+`" alt="`+cate+`" class="profileImg"></div>
                 <div class="courseInfo">
                   <input type="hidden" name="classid" value="`+id+`">
