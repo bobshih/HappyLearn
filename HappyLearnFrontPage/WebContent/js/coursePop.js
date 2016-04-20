@@ -12,7 +12,7 @@ $(document).ready(main);
 var coursePopSetup = function(){
     /* Push the body and the nav over by 285px over */
     $('.courseFrame').click(function() {
-        $('.coursePop').toggle();
+        $('.coursePop').fadeIn(500);
         // <input type="hidden" name="classid" value="`+id+`">
         // <input type="hidden" name="tid" value="`+tid+`">
         // <input type="hidden" name="cate" value="`+cate+`">
