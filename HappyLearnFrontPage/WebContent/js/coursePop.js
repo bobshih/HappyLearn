@@ -12,19 +12,10 @@ $(document).ready(main);
 var coursePopSetup = function() {
   /* Push the body and the nav over by 285px over */
   $('.courseFrame').click(function() {
-
-
-
-    console.log(String(document.getElementById('popForm').nnerHTML));
+    console.log(String(document.getElementById('popForm').innerHTML));
     document.getElementById('popForm').innerHTML = "";
     $('.coursePop').fadeIn(500);
-    // <input type="hidden" name="classid" value="`+id+`">
-    // <input type="hidden" name="tid" value="`+tid+`">
-    // <input type="hidden" name="cate" value="`+cate+`">
-    // <input type="hidden" name="name" value="`+name+`">
-    // <input type="hidden" name="desc" value="`+desc+`">
-    // <input type="hidden" name="limit" value="`+limit+`">
-    // <input type="hidden" name="now" value="`+now+`">
+
     var getName = function(id, name) {
       return $.ajax({
         dataType: "text",
@@ -85,9 +76,7 @@ var coursePopSetup = function() {
     var desc = $(this).children('.courseInfo').children("input[name='desc']").val();
     var limit = $(this).children('.courseInfo').children("input[name='limit']").val();
     var now = $(this).children('.courseInfo').children("input[name='now']").val();
-    // $('.popProfile').attr("src", "img/subject/"+cate+".jpg");
-    // alert($('.popProfile').attr("src"));
-    // $('.popInfo table tr .field')[0].val(name);
+
     var element = `<div class="coursePopClose">X</div><div class="popProfile"><img src="` + "img/subject/" + cate + ".jpg" + `" alt="` + cate + `" class="profileImg"></div>
         <div class="popInfo">
             <table>

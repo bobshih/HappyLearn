@@ -4,8 +4,13 @@ var addElement = function(id, name, tid, desc, limit, now, cate) {
             <div class="courseFrame">
                 <div class="profile"><img src="`+"img/subject/"+cate+".jpg"+`" alt="`+cate+`" class="profileImg"></div>
                 <div class="courseInfo">
-                  <input type="hidden" name="classid" value="`+id+`">
-                  <input type="hidden" name="tid" value="`+tid+`">
+                <input type="hidden" name="classid" value="`+id+`">
+                <input type="hidden" name="tid" value="`+tid+`">
+                <input type="hidden" name="cate" value="`+cate+`">
+                <input type="hidden" name="name" value="`+name+`">
+                <input type="hidden" name="desc" value="`+desc+`">
+                <input type="hidden" name="limit" value="`+limit+`">
+                <input type="hidden" name="now" value="`+now+`">
                     <div class="coursePartic">
                         <nobr>
                             Participants: `+now+`/`+limit+`</nobr>
@@ -32,7 +37,6 @@ window.onload = function() {
 
             for (var i in jsonArray) {
                 var json = jsonArray[i];
-                console.log(json);
                 var id = json.ID;
                 var name = json.NAME;
                 var desc = json.DESCRIPTION;
@@ -60,7 +64,6 @@ window.onload = function() {
 
                 for (var i in jsonArray) {
                     var json = jsonArray[i];
-                    console.log(json);
                     var id = json.ID;
                     var name = json.CATEGORYNAME;
                     var group = json.GROUP;
@@ -68,6 +71,7 @@ window.onload = function() {
                     var element = "<option value='"+id+"'>"+name+" - "+group+"</option>";
                     $("select[name='categoryDrop']").append(element);
                 }
+                coursePopSetup();
             },
             error: function(xhr, status, message) {
                 var errorM = "fail to get category info because: " + message;
