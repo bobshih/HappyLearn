@@ -1,4 +1,5 @@
 var main = function() {
+
     $('.coursePopClose').click(function() {
         $('.coursePop').toggle();
     });
