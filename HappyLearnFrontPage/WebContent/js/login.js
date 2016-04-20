@@ -5,14 +5,14 @@ $(document).ready(
             var email = document.getElementsByName('email')[0].value;
             var password = document.getElementsByName('password')[0].value;
             var url = "http://HappyLearnDataBase.eu-gb.mybluemix.net/Account?email=" + email + "&password=" + password;
-            alert(url);
+            // alert(url);
             var posting = $.ajax({
                 dataType: "text",
                 url: url,
                 success: function(data) {
-                    alert("fff"+data+"fff");
+                    // alert("fff"+data+"fff");
                     if (data === "[]") {
-                        alert("json is null");
+                        alert("login failed passwrod error or account error");
                         $('#login').attr("disabled", false);
                         return;
                     }
