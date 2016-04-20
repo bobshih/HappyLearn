@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Happy Learn</title>
@@ -9,142 +9,68 @@
     <link rel="stylesheet" href="css/homePage.css">
     <link rel="stylesheet" href="css/courseLayout.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- 課程彈跳視窗 -->
     <div class="coursePop">
-        <div class="courseForm pop" id="popForm">
-
-            <!-- <div class="popProfile"><img src="" alt="" class="profileImg"></div>
-            <div class="popInfo">
-                <table>
-                    <tr>
-                        <td class="attr">
-                            Coures Name:
-                        </td>
-                        <td class="field">
-                            wefwef
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="attr">
-                            Teacher Name:
-                        </td>
-                        <td class="field">
-                            wfewef
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="attr">
-                            Subject :
-                        </td>
-                        <td class="field">
-                            fefef
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="attr">
-                            Limit :
-                        </td>
-                        <td class="field">
-                            2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="attr">
-                            Participants :
-                        </td>
-                        <td class="field">
-                            3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="attr">
-                            Description :
-                        </td>
-                        <td class="field">
-                            <textarea id="desc" rows="0">wefwefwefwefwefwefwefjsdfhglsdjfhglksjdhfglkjshdflkjhsdflkbjhsdlkfgjh</textarea>
-                        </td>
-                    </tr>
-                </table> -->
-                <!-- <div class="coursePartic popp">
-                <nobr>
-                  participants:2/3</nobr>
-              </div>
-              <div class="courseName">
-                <nobr>course name:computer science2</nobr>
-              </div> -->
-            </div>
-            <!-- <div class="col col-md-3 col-sm-4 col-xs-6">
-              <div class="courseFrame">
-                <div class="profile"><img src="" alt="" class="profileImg"></div>
-                <div class="courseInfo">
-                  <div class="coursePartic">
-                    <nobr>
-                      participants:2/3</nobr>
-                  </div>
-                  <div class="courseName">
-                    <nobr>course name:computer science2</nobr>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-        </div>
+      <div class="courseForm">
+              <div class="coursePopClose">X</div>
+      </div>
     </div>
     <!-- 頂端的導覽列，包含icon、登入、註冊...等選項 -->
     <div class="topNavBg">
-        <div class="topNav">
-            <a href="home.html">
-                <div class="icon">
-                    <!-- <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">-->
-                    <span>Happy Laern</span>
-                </div>
-            </a>
+      <div class="topNav">
+        <a href="home.html">
+          <div class="icon">
+            <!-- <img src="img/hlIcon.ico" alt="happy learn Icon" class="hlIcon">-->
+            <span>Happy Laern</span>
+          </div>
+        </a>
 
-            <span class="navMenuIconBg hideLG hideSM">
+        <span class="navMenuIconBg hideLG hideSM">
           <span class="navMenuIcon "></span>
-            </span>
-            <a href="login.html">
-                <div id="loginLink" class="navLink  hideXS">登入</div>
-            </a>
-            <a href="register.html">
-                <div id="registerLink" class="navLink  hideXS">註冊</div>
-            </a>
-        </div>
+        </span>
+        <a href="login.html">
+          <div id="loginLink" class="navLink  hideXS">登入</div>
+        </a>
+        <a href="register.html">
+          <div id="registerLink" class="navLink  hideXS">註冊</div>
+        </a>
+      </div>
 
-        <div class="navMenuSlidebar hideLG hideSM">
-            <a href="login.html">
-                <div id="loginLink" href="" class="menuLink">登入</div>
-            </a>
-            <a href="register.html">
-                <div id="registerLink" href="" class="menuLink">註冊</div>
-            </a>
-        </div>
-        <!-- 選單，LG隱藏 -->
+      <div class="navMenuSlidebar hideLG hideSM">
+        <a href="login.html">
+          <div id="loginLink" href="" class="menuLink">登入</div>
+        </a>
+        <a href="register.html">
+          <div id="registerLink" href="" class="menuLink">註冊</div>
+        </a>
+      </div>
+      <!-- 選單，LG隱藏 -->
     </div>
     <!--nav-->
 
     <div class="contain-area">
-        <div class="hideXS">
-            <div class="container ">
+      <div class="hideXS">
+        <div class="container ">
 
-                <img src="img/groupLearning.jpg" alt="" class="joinUsImg">
-                <div class="mask">
-                    <span class="slogan">找學生，找老師</span>
-                    <a href="register.html">
-                        <div class="joinUsBtn">加入我們</div>
-                    </a>
-                </div>
-            </div>
+          <img src="img/groupLearning.jpg" alt="" class="joinUsImg">
+          <div class="mask">
+            <span class="slogan">找學生，找老師</span>
+            <a href="register.html">
+              <div class="joinUsBtn">加入我們</div>
+            </a>
+          </div>
         </div>
+      </div>
 
-        <div class="courseZoneTitle hideXS">
-            <h1>最新資訊</h1>
-            <h3>看看有什麼新的課程吧</h3>
-        </div>
-        <div class="container" id="content">
-            <!-- <div class="col col-md-3 col-sm-4 col-xs-6">
+      <div class="courseZoneTitle hideXS">
+        <h1>最新資訊</h1>
+        <h3>看看有什麼新的課程吧</h3>
+      </div>
+      <div class="container" id="content">
+        <!-- <div class="col col-md-3 col-sm-4 col-xs-6">
           <div class="courseFrame">
             <div class="profile"><img src="img/subject/2.jpg" alt="" class="profileImg"></div>
             <div class="courseInfo">
@@ -242,19 +168,18 @@
             </div>
           </div>
         </div> -->
-        </div>
-        <div class="footer container"></div>
+      </div>
+      <div class="footer container"></div>
     </div>
-    </div>
+  </div>
 
-    </div>
+</div>
 
-    <div class="footer"></div>
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="https://jquery-elastic.googlecode.com/svn-history/r37/trunk/jquery.elastic.js"></script>
-    <script src="js/coursePop.js"></script>
-    <script src="js/loadCourseInfo.js"></script>
-    <script src="js/menuSlidebar.js"></script>
+<div class="footer"></div>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="js/loadCourseInfo.js"></script>
+<script src="js/menuSlidebar.js"></script>
+<script src="js/coursePop.js"></script>
 </body>
 
 </html>
